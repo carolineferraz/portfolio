@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syncopate&display=swap');
+
+:root {
+    --background1-color: #282A36;
+    --background2-color: #44475A;
+    --accent1-color: #FF79C6;
+    --accent2-color: #50FA7B;
+    --accent3-color: #6272A4;
+    --white-color: #F8F8F2;
+}
+
+.div-foto {
+    padding-right: 6.875rem;
+}
+
+.foto-carol {
+    max-width: 12.5rem;
+    height: auto;
+    width: auto;
+}
+
+.row-h2 {
+    padding-right: 6.25rem;
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    color: var(--accent2-color);
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: 'Syncopate', sans-serif;
+    color: var(--accent1-color);
+    font-size: 2.8rem;
+}
+
+.row-animacao {
+    padding-top: 6rem;
+    padding-left: 3.75rem;
+    padding-bottom: 2rem;
+}
+
+.fantasminha {
+    max-width: 4.3rem;
+}
+
+.curved {
+    background: var(--background2-color);
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+}
+
+h3 {
+    color: var(--accent1-color);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+}
+
+.span-white {
+    color: var(--white-color);
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--white-color);
+    text-align: center;
+    padding-top: .9rem;
+    font-size: 1.3rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+}
+
+.non-curved {
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;   
+    margin: 0;
+}
+
+.coluna-1-portfolio {
+    padding-left: 10rem;
+}
+
+.coluna-2-portfolio {
+    padding-left: 4rem;
+}
+
+.margin-ajust {
+    margin-left: 4.2rem;
+}
+
+.img-portfolio {
+    width: 20rem;
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.portfolio-github-ancor {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--white-color);
+    text-align: center;
+    padding-top: .9rem;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+}
+
+a:hover {
+    color: var(--accent2-color);
+}
+
+.fa-github {
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+.green-icon {
+    color: var(--accent2-color);
+    font-size: 1.8rem;
+}
+
+.fa-graduation-cap {
+    font-size: 1.8rem;
+}
+
+.p-formacao-titulo {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    color: var(--white-color);
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.p-formacao-datas {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+    color: var(--white-color);
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 3.75rem;
+    padding-top: 2rem;
+  }
+
+ul li {
+    display:inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+li a strong {
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+ul li a {
+    margin: 0;
+    padding: 0;
+    padding-left: 0;
+    align-self: flex-start;
+}
+
+.contato-ancor {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--white-color);
+    text-align: center;
+    padding-top: .9rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.contato-ancor:hover {
+    color: var(--accent2-color);
+}
+
+.white-icon {
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+.bg-color {
+    background-color: #44475A;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    color: var(--accent3-color);
+    font-family: 'Roboto Mono', monospace;
+}
+
+h4 span a {
+    color: var(--accent3-color);
+}
+
+body, html {
+    background-color: var(--background1-color);
+    padding: 0;
+    padding-top: 5rem;
+    margin: 0;
+}
+
