@@ -2,7 +2,8 @@
 
 
 
-![ezgif.com-gif-maker](C:\Users\Caroline\Desktop\ezgif.com-gif-maker.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/95757534/177062618-db0429ed-9473-4b2e-99fb-13d72d0790d2.gif)
+
 
 
 
