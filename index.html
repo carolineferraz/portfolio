@@ -13,6 +13,12 @@
 <body>
     <div class="col-md-12 m-0 p-0">
         <div class="row">
+
+            <!-- menu-->
+
+            <!-- /menu-->
+
+            <!-- foto-e-titulo-->
             <div class="col-md-4 d-flex justify-content-end div-foto">
                 <img src="./assets/img/foto-carol.png" alt="Foto Caroline Ferraz" class="foto-carol img-fluid">
             </div>
@@ -24,33 +30,131 @@
                     <h2>DESENVOLVEDORA WEB FULL STACK JÚNIOR</h2>
                 </div>
             </div>
-            <div class="row row-animacao">
-                <img src="./assets/img/ghost.svg" class="fantasminha">
-            </div>
-            <div class="row">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225"><path fill="#44475A" fill-opacity="1" d="M0,128L80,133.3C160,139,320,149,480,133.3C640,117,800,75,960,85.3C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            <!-- /foto-e-titulo-->
+
+            <!-- sobre-mim-->
+            <div class="row mt-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225"><path fill="#44475A" fill-opacity="1" d="M0,128L80,133.3C160,139,320,149,480,133.3C640,117,800,75,960,85.3C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                </svg>
                 <div class="col-md-12 curved">
                     <h3>sobreMim<span class="span-white">() {</span></h3>
-                    <p>Sou Desenvolvedora Full Stack formada pela Generation Brasil e estudante de Análise e Desenvolvimento de Sistemas. Tenho conhecimentos em APIs Rest e SPA com desenvolvimento back-end em Java/Spring e front-end em Angular. Estou sempre buscando aprimorar minhas soft e hard skills e atualmente estou em busca do meu primeiro emprego na área de programação!</p>
+                    <p>Olá, eu sou a Carol. Sou Desenvolvedora Full Stack formada pela Generation Brasil e estudante de Análise e Desenvolvimento de Sistemas. Tenho conhecimentos em APIs Rest com desenvolvimento back-end em Java/Spring e front-end em Angular. Estou sempre buscando aprimorar minhas soft e hard skills e atualmente estou em busca do meu primeiro emprego na área de desenvolvimento web.</p>
                     <h3><span class="span-white">}</span></h3>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#44475A" fill-opacity="1" d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
             </div>
+            <!-- /sobre-mim-->
+
+            <!-- portfolio-->
             <div class="row">
                 <div class="col-md-12 non-curved m-0">
                     <div class="row">
-                        <h3>portfolio<span class="span-white">() {</span></h3>
+                        <h3 class="mb-5">portfolio<span class="span-white">() {</span></h3>
                     </div>
-                    <div class="row mt-5 mb-5">
-                        <div class="col-md-6 coluna-1-portfolio d-flex justify-content-center align-items-center">
-                            <a href="https://heybugs.netlify.app/" target="_blank"><img src="./assets/img/img-heybugs.png" class="img-portfolio"></a>
+                    <div class="row">
+                        <div class="col-md-6 coluna-1-portfolio d-flex justify-content-center">
+
+                            <div class="projeto" id="bg-p1" onmouseover="mostrarProjetoOverlayUm();" onmouseout="esconderProjetoOverlayUm();">
+                                <div class="projeto-overlay" id="p1">
+                                    <h5 class="titulo-projeto">Hey, Bugs!</h5>
+                                    <p class="texto-projeto">Projeto Full Stack de Blog sobre filmes, música e tecnologia.</p>
+                                    <ul class="mt-1 ml-3 p-0">
+                                        <li>
+                                            <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
+                                        </li>
+                                        <li>
+                                            <a href="https://heybugs.netlify.app/" target="_blank" id="projeto-anchor"><strong> Ver a Aplicação</strong></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="mt-1 ml-3 p-0">
+                                        <li>
+                                            <i class="fa-brands fa-github " id="projeto-icon"></i>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/carolineferraz/deploy_blogPessoal" target="_blank" id="projeto-anchor"><strong> Ver o Código Fonte</strong></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="projeto" id="bg-p3" onmouseover="mostrarProjetoOverlayTres();" onmouseout="esconderProjetoOverlayTres();">
+                                <div class="projeto-overlay" id="p3">
+                                    <h5 class="titulo-projeto">Jump Game</h5>
+                                    <p class="texto-projeto">Jogo em JS, HTML e CSS.</p>
+                                    <ul class="mt-1 ml-3 p-0">
+                                        <li>
+                                            <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
+                                        </li>
+                                        <li>
+                                            <a href="https://carolineferraz.github.io/js-jump-game/" target="_blank" id="projeto-anchor"><strong> Ver a Aplicação</strong></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="mt-1 ml-3 p-0">
+                                        <li>
+                                            <i class="fa-brands fa-github " id="projeto-icon"></i>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/carolineferraz/js-jump-game" target="_blank" id="projeto-anchor"><strong> Ver o Código Fonte</strong></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            
                         </div>
-                        <div class="col-md-6 coluna-2-portfolio d-flex justify-content-center align-items-center">
-                            <a href="https://janelaviva.netlify.app/" target="_blank"><img src="./assets/img/img-janelaviva.png" class="img-portfolio"></a>   
+                        <div class="col-md-6 coluna-2-portfolio d-flex justify-content-center">
+
+                            <div class="projeto" id="bg-p2" onmouseover="mostrarProjetoOverlayDois();" onmouseout="esconderProjetoOverlayDois();">
+                                <div class="projeto-overlay" id="p2">
+                                    <h5 class="titulo-projeto">Controle Financeiro</h5>
+                                    <p class="texto-projeto">Front-end de SPA Responsiva.</p>
+                                    <ul class="mt-1 ml-3 p-0">
+                                        <li>
+                                            <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
+                                        </li>
+                                        <li>
+                                            <a href="https://carolineferraz.github.io/SPA-responsiva_curso-NewTab-Academy/" target="_blank" id="projeto-anchor"><strong> Ver a Aplicação</strong></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="mt-1 ml-3 p-0">
+                                        <li>
+                                            <i class="fa-brands fa-github " id="projeto-icon"></i>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/carolineferraz/SPA-responsiva_curso-NewTab-Academy" target="_blank" id="projeto-anchor"><strong> Ver o Código Fonte</strong></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="projeto" id="bg-p4" onmouseover="mostrarProjetoOverlayQuatro();" onmouseout="esconderProjetoOverlayQuatro();">
+                                <div class="projeto-overlay" id="p4">
+                                    <h5 class="titulo-projeto">Janela Viva</h5>
+                                    <p class="texto-projeto">Projeto Full Stack de uma proposta de Rede Social.</p>
+                                    <ul class="mt-1 ml-3 p-0">
+                                        <li>
+                                            <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
+                                        </li>
+                                        <li>
+                                            <a href="https://janelaviva.netlify.app/" target="_blank" id="projeto-anchor"><strong> Ver a Aplicação</strong></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="mt-1 ml-3 p-0">
+                                        <li>
+                                            <i class="fa-brands fa-github " id="projeto-icon"></i>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/carolineferraz/janela-viva" target="_blank" id="projeto-anchor"><strong> Ver o Código Fonte</strong></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="row d-flex align-items-center justify-content-center">
-                        <p class="align-self-center margin-ajust">Código Fonte e outros projetos no meu GitHub!</p>
+                        <p class="align-self-center margin-ajust mt-5">Código Fonte e outros projetos no meu GitHub!</p>
                     </div>
                     <div class="row d-flex align-items-center justify-content-center">
                         <ul class="mt-1 ml-3 p-0">
@@ -58,13 +162,13 @@
                                 <i class="fa-brands fa-github green-icon"></i>
                             </li>
                             <li>
-                                <a href="https://github.com/carolineferraz/" target="_blank" class="portfolio-github-ancor"><strong> github.com/carolineferraz</strong></a>
+                                <a href="https://github.com/carolineferraz/" target="_blank" class="portfolio-github-anchor"><strong> github.com/carolineferraz</strong></a>
                             </li>
                         </ul>
                         
                     </div>
                     <div class="row">
-                        <h3><span class="span-white">}</span></h3>
+                        <h3 class="mt-5"><span class="span-white">}</span></h3>
                     </div>
                     
                 </div>
@@ -120,7 +224,7 @@
                                 <i class="fa-brands fa-linkedin green-icon"></i>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/ferraz-caroline/" target="_blank" class="contato-ancor"><strong class="ml-3"> linkedin/in/ferraz-caroline</strong></a>
+                                <a href="https://www.linkedin.com/in/ferraz-caroline/" target="_blank" class="contato-anchor"><strong class="ml-3"> linkedin/in/ferraz-caroline</strong></a>
                             </li>
                         </ul>
                         <ul class="mt-0 ml-5 pt-1">
@@ -128,7 +232,7 @@
                                 <i class="fa-brands fa-github green-icon"></i>
                             </li>
                             <li>
-                                <a href="https://github.com/carolineferraz/" target="_blank" class="contato-ancor"><strong class="ml-3"> github.com/carolineferraz</strong></a>
+                                <a href="https://github.com/carolineferraz/" target="_blank" class="contato-anchor"><strong class="ml-3"> github.com/carolineferraz</strong></a>
                             </li>
                         </ul>
                         <ul class="mt-0 ml-5 pt-1">
@@ -136,7 +240,7 @@
                                 <i class="fa-solid fa-at green-icon"></i>
                             </li>
                             <li>
-                                <strong class="ml-3 contato-ancor"> projetos.crrz@gmail.com</strong>
+                                <strong class="ml-3 contato-anchor"> projetos.crrz@gmail.com</strong>
                             </li>
                         </ul>
                         <ul class="mt-0 ml-5 pt-1">
@@ -144,7 +248,7 @@
                                 <i class="fa-solid fa-mobile-screen-button green-icon"></i>
                             </li>
                             <li>
-                                <strong class="ml-3 contato-ancor"> 55+ 81 9 9180 4497</strong>
+                                <strong class="ml-3 contato-anchor"> 55+ 81 9 9180 4497</strong>
                             </li>
                         </ul>
                         <ul class="mt-0 ml-5 pt-1">
@@ -152,16 +256,20 @@
                                 <i class="fa-solid fa-location-dot green-icon"></i>
                             </li>
                             <li>
-                                <strong class="ml-3 contato-ancor"> Recife - PE</strong>
+                                <strong class="ml-3 contato-anchor"> Recife - PE</strong>
                             </li>
                         </ul>
                         
                     </div>
                     <h3><span class="span-white">}</span></h3>
                 </div>
+                <div class="row row-animacao">
+                    <img src="./assets/img/ghost.svg" class="fantasminha">
+                </div>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#44475A" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,170.7C320,192,400,256,480,245.3C560,235,640,149,720,149.3C800,149,880,235,960,272C1040,309,1120,299,1200,288C1280,277,1360,267,1400,261.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
         </div>
+        
         <div class="row m-0  bg-color d-flex justify-content-center align-items-center">
             <div class="col-md-12 align-items-center m-0 justify-content-center ">
                 <ul class="mt-0 mb-5 pt-1 align-self-center text-center">
@@ -169,7 +277,7 @@
                         <i class="fa-solid fa-link white-icon"> </i>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/12I05DC8FxmI0psUbE9yIQ2OFwa5iUInW/view?usp=sharing contato-ancor" target="_blank"> <strong class="contato-ancor ml-2">Currículo em PDF</strong></a>
+                        <a href="https://drive.google.com/file/d/12I05DC8FxmI0psUbE9yIQ2OFwa5iUInW/view?usp=sharing contato-anchor" target="_blank"> <strong class="contato-anchor ml-2">Currículo em PDF</strong></a>
                     </li>
                 </ul>
                 <br>
@@ -181,6 +289,6 @@
         </div>
     </div>
 
-    
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

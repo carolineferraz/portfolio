@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syncopate&display=swap');
 
+* {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --background1-color: #282A36;
     --background2-color: #44475A;
@@ -42,7 +48,10 @@ h2 {
 }
 
 .fantasminha {
+    position: absolute;
     max-width: 4.3rem;
+    animation: fantasminha-animation 15s linear infinite;
+    z-index: 1;
 }
 
 .curved {
@@ -77,12 +86,104 @@ p {
     margin: 0;
 }
 
+.projeto {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20.5rem;
+    height: 11.5rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    padding: 0;    
+}
+
+.projeto-overlay {
+    background: var(--accent3-color);
+    color: var(--white-color);
+    width: 20.5rem;
+    height: 11.5rem;
+    border-radius: 3rem;
+    opacity: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    
+}
+
+#bg-p1 {
+    background-image: url("../img/bg-heybugs.png");
+    border: 3px solid var(--accent3-color);
+}
+
+#bg-p2 {
+    background-image: url("../img/bg-controlefinanceiro.png");
+    border: 3px solid var(--accent3-color);
+}
+
+#bg-p3 {
+    background-image: url("../img/bg-jumpgame.png");
+    border: 3px solid var(--accent3-color);
+}
+
+#bg-p4 {
+    background-image: url("../img/bg-janelaviva.png");
+    border: 3px solid var(--accent3-color);
+}
+
+#p1, #p2, #p3, #p4 {
+    visibility: hidden;
+}
+
+.titulo-projeto {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.texto-projeto {
+    font-size: 1.1rem;
+    /* font-weight: 600; */
+    line-height: 1.3rem;
+    margin: .5rem 0 .5rem 0;
+    padding: 0;
+}
+
+#projeto-anchor {
+    color: var(--white-color);
+    
+}
+
+#projeto-anchor:hover {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+#projeto-icon {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+/* .projeto:hover {
+    width: 22rem;
+    height: 12.5rem;
+}
+
+.projeto-overlay:hover {
+    width: 22rem;
+    height: 12.5rem;
+} */
+
+
 .coluna-1-portfolio {
     padding-left: 10rem;
+    flex-direction: column;
 }
 
 .coluna-2-portfolio {
     padding-left: 4rem;
+    flex-direction: column;
 }
 
 .margin-ajust {
@@ -97,7 +198,7 @@ p {
     text-decoration: none;
 }
 
-.portfolio-github-ancor {
+.portfolio-github-anchor {
     font-family: 'Roboto Mono', monospace;
     color: var(--white-color);
     text-align: center;
@@ -171,16 +272,16 @@ ul li a {
     align-self: flex-start;
 }
 
-.contato-ancor {
+.contato-anchor {
     font-family: 'Roboto Mono', monospace;
     color: var(--white-color);
     text-align: center;
     padding-top: .9rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
-.contato-ancor:hover {
+.contato-anchor:hover {
     color: var(--accent2-color);
 }
 
@@ -210,5 +311,15 @@ body, html {
     padding: 0;
     padding-top: 5rem;
     margin: 0;
+}
+
+@keyframes fantasminha-animation {
+    from {
+        left: -4.3rem;
+    }
+    to {
+        left: 100%;
+    }
+
 }
 
