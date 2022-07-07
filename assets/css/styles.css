@@ -176,6 +176,87 @@ p {
     background-position: center;
 }
 
+.div-skill-html:hover {
+    background-image: url("../img/skill-html-hover.svg");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-css:hover {
+    background-image: url("../img/skill-css-hover.svg");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-js:hover {
+    background-image: url("../img/skill-javascript-hover.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-ts:hover {
+    background-image: url("../img/skill-typescript-hover.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-angular:hover {
+    background-image: url("../img/skill-angular-hover.svg");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-java:hover {
+    background-image: url("../img/skill-java.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-spring:hover {
+    background-image: url("../img/skill-spring-hover.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-git:hover {
+    background-image: url("../img/skill-gitflow-hover.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-scrum:hover {
+    background-image: url("../img/skill-scrum-hover.svg");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
 .col-contato {
     padding-right: 25rem;   
 }
