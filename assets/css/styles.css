@@ -58,6 +58,7 @@ h2 {
     background: var(--background2-color);
     padding-left: 12.5rem;
     padding-right: 12.5rem;
+    width: 100%;
 }
 
 h3 {
@@ -83,7 +84,11 @@ p {
 .non-curved {
     padding-left: 12.5rem;
     padding-right: 12.5rem;   
-    margin: 0;
+    width: 100%;
+}
+
+.col-contato {
+    padding-right: 25rem;   
 }
 
 .projeto {
