@@ -87,6 +87,95 @@ p {
     width: 100%;
 }
 
+.div-skills {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.div-skill-html {
+    background-image: url("../img/skill-html.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-css {
+    background-image: url("../img/skill-css.svg");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-js {
+    background-image: url("../img/skill-javascript.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-ts {
+    background-image: url("../img/skill-typescript.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-angular {
+    background-image: url("../img/skill-angular.svg");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-java {
+    background-image: url("../img/skill-java.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-spring {
+    background-image: url("../img/skill-spring.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-git {
+    background-image: url("../img/skill-gitflow.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-scrum {
+    background-image: url("../img/skill-scrum.svg");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
 .col-contato {
     padding-right: 25rem;   
 }
@@ -98,8 +187,7 @@ p {
     width: 20.5rem;
     height: 11.5rem;
     border-radius: 3rem;
-    margin-top: 2rem;
-    padding: 0;    
+    margin-top: 2rem; 
 }
 
 .projeto-overlay {
@@ -113,8 +201,6 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0;
-    
 }
 
 #bg-p1 {
