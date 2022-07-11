@@ -1,3 +1,5 @@
+// PORTFOLIO:
+
 const pOne = document.querySelector('#p1');
 const pTwo = document.querySelector('#p2');
 const pThree = document.querySelector('#p3');
@@ -47,3 +49,106 @@ function esconderProjetoOverlayQuatro() {
     bgFour.style.border = '3px solid var(--accent3-color)';
 }
 
+
+// HABILIDADES:
+
+const textSkillNone = document.querySelector('.text-skill-none');
+const divTextSkillHtml = document.querySelector('.div-text-skill-html');
+const divTextSkillCss = document.querySelector('.div-text-skill-css');
+const divTextSkillJs = document.querySelector('.div-text-skill-js');
+const divTextSkillTs = document.querySelector('.div-text-skill-ts');
+const divTextSkillAngular = document.querySelector('.div-text-skill-angular');
+const divTextSkillJava = document.querySelector('.div-text-skill-java');
+const divTextSkillSpring = document.querySelector('.div-text-skill-spring');
+const divTextSkillGit = document.querySelector('.div-text-skill-git');
+const divTextSkillScrum = document.querySelector('.div-text-skill-scrum');
+
+
+function mostrarDivHtml() {
+    divTextSkillHtml.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivHtml() {
+    divTextSkillHtml.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+
+function mostrarDivCss() {
+    divTextSkillCss.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivCss() {
+    divTextSkillCss.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+
+function mostrarDivJs() {
+    divTextSkillJs.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivJs() {
+    divTextSkillJs.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+
+function mostrarDivTs() {
+    divTextSkillTs.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivTs() {
+    divTextSkillTs.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+
+function mostrarDivAngular() {
+    divTextSkillAngular.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivAngular() {
+    divTextSkillAngular.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+
+function mostrarDivJava() {
+    divTextSkillJava.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivJava() {
+    divTextSkillJava.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+
+function mostrarDivSpring() {
+    divTextSkillSpring.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivSpring() {
+    divTextSkillSpring.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+
+function mostrarDivGit() {
+    divTextSkillGit.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivGit() {
+    divTextSkillGit.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+
+function mostrarDivScrum() {
+    divTextSkillScrum.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivScrum() {
+    divTextSkillScrum.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}

@@ -87,6 +87,25 @@ p {
     width: 100%;
 }
 
+.text-skill-none {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.div-text-skill {
+    display: none;
+    height: 10rem;
+}
+
+.title-skill {
+    font-weight: 600;
+}
+
+.text-skill {
+    padding-top: .3rem;
+}
+
 .div-skills {
     display: flex;
     justify-content: center;
