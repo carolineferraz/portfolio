@@ -60,6 +60,7 @@ const divTextSkillTs = document.querySelector('.div-text-skill-ts');
 const divTextSkillAngular = document.querySelector('.div-text-skill-angular');
 const divTextSkillJava = document.querySelector('.div-text-skill-java');
 const divTextSkillSpring = document.querySelector('.div-text-skill-spring');
+const divTextSkillMysql = document.querySelector('.div-text-skill-mysql');
 const divTextSkillGit = document.querySelector('.div-text-skill-git');
 const divTextSkillScrum = document.querySelector('.div-text-skill-scrum');
 
@@ -130,6 +131,15 @@ function mostrarDivSpring() {
 }
 function esconderDivSpring() {
     divTextSkillSpring.style.display = 'none';
+    textSkillNone.style.display = 'flex';
+}
+
+function mostrarDivMysql() {
+    divTextSkillMysql.style.display = 'block';
+    textSkillNone.style.display = 'none';
+}
+function esconderDivMysql() {
+    divTextSkillMysql.style.display = 'none';
     textSkillNone.style.display = 'flex';
 }
 

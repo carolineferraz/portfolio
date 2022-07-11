@@ -49,7 +49,7 @@ h2 {
 
 .fantasminha {
     position: absolute;
-    max-width: 4.3rem;
+    max-width: 24rem;
     animation: fantasminha-animation 15s linear infinite;
     z-index: 1;
 }
@@ -81,6 +81,11 @@ p {
     padding-right: 3.75rem;
 }
 
+.gen-anchor {
+    color: var(--white-color);
+    font-weight: 600;
+}
+
 .non-curved {
     padding-left: 12.5rem;
     padding-right: 12.5rem;   
@@ -88,14 +93,14 @@ p {
 }
 
 .text-skill-none {
-    height: 10rem;
+    height: 13rem;
     display: flex;
     align-items: center;
 }
 
 .div-text-skill {
     display: none;
-    height: 10rem;
+    height: 13rem;
 }
 
 .title-skill {
@@ -104,6 +109,10 @@ p {
 
 .text-skill {
     padding-top: .3rem;
+}
+
+.text-git {
+    font-size: 1.2rem;
 }
 
 .div-skills {
@@ -170,6 +179,15 @@ p {
 
 .div-skill-spring {
     background-image: url("../img/skill-spring.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    background-position: center;
+}
+
+.div-skill-mysql {
+    background-image: url("../img/skill-mysql.png");
     height: 8rem;
     width: 8rem;
     background-repeat: no-repeat;
@@ -251,6 +269,15 @@ p {
 
 .div-skill-spring:hover {
     background-image: url("../img/skill-spring-hover.png");
+    height: 8rem;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: 6rem;
+    background-position: center;
+}
+
+.div-skill-mysql:hover {
+    background-image: url("../img/skill-mysql-hover.png");
     height: 8rem;
     width: 8rem;
     background-repeat: no-repeat;
@@ -476,6 +503,12 @@ ul li a {
     color: var(--accent2-color);
 }
 
+.cv-anchor {
+    color: var(--white-color);
+    font-size: 2rem;
+    padding-right: 2.5rem;
+}
+
 .white-icon {
     color: var(--white-color);
     font-size: 2rem;
@@ -506,7 +539,7 @@ body, html {
 
 @keyframes fantasminha-animation {
     from {
-        left: -4.3rem;
+        left: -24rem;
     }
     to {
         left: 100%;
