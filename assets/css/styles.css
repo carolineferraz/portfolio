@@ -15,14 +15,9 @@
     --white-color: #F8F8F2;
 }
 
-.div-foto {
-    padding-right: 6.875rem;
-}
-
 .foto-carol {
-    max-width: 12.5rem;
-    height: auto;
-    width: auto;
+    height: 15vw;
+    width: 15vw;
 }
 
 .row-h2 {
@@ -32,13 +27,13 @@
 h1 {
     font-family: 'Syncopate', sans-serif;
     color: var(--accent2-color);
-    font-size: 4rem;
+    font-size: 5vw;
 }
 
 h2 {
     font-family: 'Syncopate', sans-serif;
     color: var(--accent1-color);
-    font-size: 2.8rem;
+    font-size: 3.5vw;
 }
 
 .row-animacao {
@@ -546,4 +541,27 @@ body, html {
     }
 
 }
+
+@media(max-width: 1080px) {
+
+    
+
+}
+
+@media(max-width: 900px) {
+
+    .foto-carol{
+        height: 25vw;
+        width: 25vw;
+    }
+
+}
+
+@media(max-width: 380px) {
+
+    
+
+}
+
+
 
