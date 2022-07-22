@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syncopate&display=swap');
 
-* {
+*, html, body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
 }
 
 :root {
@@ -22,6 +27,12 @@
 
 .row-h2 {
     padding-right: 6.5rem;
+}
+
+.div-home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -51,8 +62,8 @@ h2 {
 
 .curved {
     background: var(--background2-color);
-    padding-left: 12.5rem;
-    padding-right: 12.5rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
     width: 100%;
 }
 
@@ -60,6 +71,7 @@ h3 {
     color: var(--accent1-color);
     font-family: 'Roboto Mono', monospace;
     font-size: 2rem;
+    padding-left: 4vw;
 }
 
 .span-white {
@@ -81,21 +93,34 @@ p {
     font-weight: 600;
 }
 
-.non-curved {
-    padding-left: 12.5rem;
-    padding-right: 12.5rem;   
+.container-portfolio {
+    padding-left: 8vw;
+    padding-right: 8vw;
     width: 100%;
 }
 
+.container-skills {
+    padding-left: 8vw;
+    width: 100%;
+}
+
+.col-skills {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 0;
+    padding-left: 5vw;
+}
+
 .text-skill-none {
-    height: 13rem;
+    height: 15rem;
     display: flex;
     align-items: center;
 }
 
 .div-text-skill {
     display: none;
-    height: 13rem;
+    height: 15rem;
 }
 
 .title-skill {
@@ -108,13 +133,14 @@ p {
 
 .text-git {
     font-size: 1.2rem;
+    line-height: 1.6rem;
 }
 
 .div-skills {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
-    padding: 0;
     align-items: center;
 }
 
@@ -299,7 +325,31 @@ p {
 }
 
 .col-contato {
-    padding-right: 25rem;   
+    padding-right: 30rem;   
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 2vw;
+}
+
+.projects-column-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.projects-column-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
 }
 
 .projeto {
@@ -309,7 +359,7 @@ p {
     width: 20.5rem;
     height: 11.5rem;
     border-radius: 3rem;
-    margin-top: 2rem; 
+    margin: 2vw; 
 }
 
 .projeto-overlay {
@@ -357,7 +407,6 @@ p {
 
 .texto-projeto {
     font-size: 1.1rem;
-    /* font-weight: 600; */
     line-height: 1.3rem;
     margin: .5rem 0 .5rem 0;
     padding: 0;
@@ -376,31 +425,6 @@ p {
 #projeto-icon {
     color: var(--white-color);
     font-size: 1.2rem;
-}
-
-/* .projeto:hover {
-    width: 22rem;
-    height: 12.5rem;
-}
-
-.projeto-overlay:hover {
-    width: 22rem;
-    height: 12.5rem;
-} */
-
-
-.coluna-1-portfolio {
-    padding-left: 10rem;
-    flex-direction: column;
-}
-
-.coluna-2-portfolio {
-    padding-left: 4rem;
-    flex-direction: column;
-}
-
-.margin-ajust {
-    margin-left: 4.2rem;
 }
 
 .img-portfolio {
@@ -443,8 +467,6 @@ a:hover {
     font-weight: 600;
     color: var(--white-color);
     text-align: left;
-    padding: 0;
-    margin: 0;
     font-size: 1.3rem;
 }
 
@@ -462,7 +484,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 3.75rem;
+    padding-left: 3.75vw;
     padding-top: 2rem;
   }
 
@@ -512,8 +534,6 @@ ul li a {
 .bg-color {
     background-color: #44475A;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 h4 {
@@ -527,9 +547,7 @@ h4 span a {
 
 body, html {
     background-color: var(--background1-color);
-    padding: 0;
     padding-top: 5rem;
-    margin: 0;
 }
 
 @keyframes fantasminha-animation {
@@ -542,22 +560,24 @@ body, html {
 
 }
 
-@media(max-width: 1080px) {
+@media screen and (max-width: 1080px) {
 
+    
     
 
 }
 
-@media(max-width: 900px) {
+@media screen and (max-width: 900px) {
 
-    .foto-carol{
-        height: 25vw;
-        width: 25vw;
+    .div-home{
+        flex-direction: column;
+        margin-left: 4vw;
     }
+
 
 }
 
-@media(max-width: 380px) {
+@media screen and (max-width: 380px) {
 
     
 

@@ -23,11 +23,11 @@
         <!-- /menu-->
 
         <!-- foto-e-titulo-->
-        <div class="row">
+        <div class="div-home">
             <div class="col-md-4 d-flex justify-content-center div-foto">
                 <img src="./assets/img/foto-carol.png" alt="Foto Caroline Ferraz" class="foto-carol img-fluid">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 div-name-role">
                 <div class="row">
                     <h1>CAROLINE FERRAZ</h1>
                 </div>
@@ -53,7 +53,8 @@
                     Tenho conhecimentos em <strong>APIs RESTful</strong> com desenvolvimento back-end em
                     <strong>Java/Spring</strong> e front-end em <strong>Angular</strong>. Estou sempre buscando
                     aprimorar minhas soft e hard skills e atualmente estou em busca da minha primeira oportunidade
-                    profissional na área de desenvolvimento web!</p>
+                    profissional na área de desenvolvimento web!
+                </p>
                 <h3><span class="span-white">}</span></h3>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -66,12 +67,12 @@
 
         <!-- portfolio-->
         <div class="row">
-            <div class="col-md-12 non-curved m-0">
+            <div class="container-portfolio m-0">
                 <div class="row">
                     <h3 class="mb-5">portfolio<span class="span-white">() {</span></h3>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 coluna-1-portfolio d-flex justify-content-center">
+
+                <div class="projects-container">
 
                         <div class="projeto" id="bg-p1" onmouseover="mostrarProjetoOverlayUm();"
                             onmouseout="esconderProjetoOverlayUm();">
@@ -85,7 +86,8 @@
                                     </li>
                                     <li>
                                         <a href="https://heybugs.netlify.app/" target="_blank"
-                                            id="projeto-anchor"><strong> Ver a Aplicação</strong></a>
+                                            id="projeto-anchor"><strong>
+                                                Ver a Aplicação</strong></a>
                                     </li>
                                 </ul>
                                 <ul class="mt-1 ml-3 p-0">
@@ -125,10 +127,6 @@
                                 </ul>
                             </div>
                         </div>
-
-
-                    </div>
-                    <div class="col-md-6 coluna-2-portfolio d-flex justify-content-center">
 
                         <div class="projeto" id="bg-p2" onmouseover="mostrarProjetoOverlayDois();"
                             onmouseout="esconderProjetoOverlayDois();">
@@ -183,13 +181,11 @@
 
                         </div>
 
-                    </div>
+                <div class="col-md-12">
+                    <p class="mt-5">Código Fonte e outros projetos no meu GitHub!</p>
                 </div>
                 <div class="row d-flex align-items-center justify-content-center">
-                    <p class="align-self-center margin-ajust mt-5">Código Fonte e outros projetos no meu GitHub!</p>
-                </div>
-                <div class="row d-flex align-items-center justify-content-center">
-                    <ul class="mt-1 ml-3 p-0">
+                    <ul class="mt-1 p-0">
                         <li>
                             <i class="fa-brands fa-github green-icon"></i>
                         </li>
@@ -200,7 +196,7 @@
                     </ul>
 
                 </div>
-                <div class="row">
+                <div class="col-md-12">
                     <h3 class="mt-5"><span class="span-white">}</span></h3>
                 </div>
 
@@ -265,13 +261,13 @@
 
         <!-- habilidades -->
         <div class="row">
-            <div class="col-md-12 non-curved">
+            <div class="col-md-12 container-skills">
                 <h3>habilidades<span class="span-white">() {</span></h3>
-                <div class="col-md-10 m-0 justify-content-center p-0">
+                <div class="col-md-10 justify-content-center col-skills">
 
-                    <div class="row mt-3">
+                    <div class="row mt-3 d-flex justify-content-center">
 
-                        <p class="text-skill-none">Passe o cursor do mouse por cima dos ícones para ver a descrição!</p>
+                        <p class="text-skill-none">/* Passe o cursor por cima dos ícones para ver a descrição! */</p>
 
                         <div class="div-text-skill div-text-skill-html">
                             <p class="title-skill title-html">HTML5</p>
@@ -298,10 +294,7 @@
                         </div>
                         <div class="div-text-skill div-text-skill-angular">
                             <p class="title-skill title-angular">Angular</p>
-                            <p class="text-skill text-angular">Framework utilizado para criação do front-end de
-                                aplicações web através de uma arquitetura baseada em componentes. O Angular cria um
-                                ambiente de desenvolvimento front-end completo, com a criação de telas componentezadas e
-                                regras de negócio relacionadas com o back-end da API.</p>
+                            <p class="text-skill text-angular">Framework que disponibiliza um ambiente para desenvolvimento do front-end de aplicações web através de uma arquitetura baseada em componentes.</p>
                         </div>
                         <div class="div-text-skill div-text-skill-java">
                             <p class="title-skill title-java">Java</p>
@@ -341,7 +334,7 @@
 
                     </div>
 
-                    <div class="col-md-12 div-skills mt-3 m-0 justify-content-center mr-0">
+                    <div class="div-skills mt-3 m-0 justify-content-center mr-0">
                         <div class="div-skill-html" onmouseover="mostrarDivHtml()" onmouseout="esconderDivHtml()">
 
                         </div>
