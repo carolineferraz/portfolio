@@ -20,31 +20,40 @@ body {
     --white-color: #F8F8F2;
 }
 
-.foto-carol {
-    height: 15vw;
-    width: 15vw;
+.cartoon-carol {
+    height: 55%;
+    width: 55%;
 }
 
-.row-h2 {
+/* .row-h2 {
     padding-right: 6.5rem;
-}
+} */
 
 .div-home{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.div-foto {
+    width: 30%;
+}
+
+.div-name-role {
+    width: 60%;
 }
 
 h1 {
     font-family: 'Syncopate', sans-serif;
     color: var(--accent2-color);
-    font-size: 5vw;
+    font-size: 5.2vw;
 }
 
 h2 {
     font-family: 'Syncopate', sans-serif;
     color: var(--accent1-color);
-    font-size: 3.5vw;
+    font-size: 3vw;
 }
 
 .row-animacao {
@@ -82,10 +91,10 @@ p {
     font-family: 'Roboto Mono', monospace;
     color: var(--white-color);
     text-align: center;
-    padding-top: .9rem;
-    font-size: 1.3rem;
-    padding-left: 3.75rem;
-    padding-right: 3.75rem;
+    padding-top: 1.3rem;
+    font-size: 1.2rem;
+    padding-left: 9vw;
+    padding-right: 9vw;
 }
 
 .gen-anchor {
@@ -129,11 +138,6 @@ p {
 
 .text-skill {
     padding-top: .3rem;
-}
-
-.text-git {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
 }
 
 .div-skills {
@@ -468,16 +472,27 @@ a:hover {
     color: var(--white-color);
     text-align: left;
     font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
 }
 
 .p-formacao-datas {
     font-family: 'Roboto Mono', monospace;
-    font-weight: 200;
+    font-weight: 500;
     color: var(--white-color);
     text-align: left;
     padding: 0;
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+
+.p-formacao {
+    opacity: 60%;
+}
+
+.p-formacao:hover {
+    opacity: 100%;
+    transition-duration: 150ms;
 }
 
 ul {
@@ -574,12 +589,95 @@ body, html {
         margin-left: 4vw;
     }
 
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .green-icon {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .p-formacao-titulo {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    
+    .p-formacao-datas {
+        font-weight: 500;
+        text-align: left;
+        font-size: .95rem;
+    }
+
+    .cartoon-carol {
+        height: 33%;
+        width: 33%;
+    }
+    
+    .div-home{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .div-foto {
+        width: 100%;
+    }
+
+    .div-name-role {
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 4vw;
+    }
+
+    h1 {
+        font-family: 'Syncopate', sans-serif;
+        color: var(--accent2-color);
+        font-size: 7vw;
+    }
+    
+    h2 {
+        font-family: 'Syncopate', sans-serif;
+        color: var(--accent1-color);
+        font-size: 4.3vw;
+    }
 
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 510px) {
 
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .green-icon {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .p-formacao-titulo {
+        font-weight: 600;
+        font-size: 1.05rem;
+    }
     
+    .p-formacao-datas {
+        font-weight: 500;
+        text-align: left;
+        font-size: .9rem;
+    }
+
+    .portfolio-github-anchor {
+        font-size: 1rem;
+    }
+
+
 
 }
 
