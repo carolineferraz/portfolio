@@ -1,4 +1,17 @@
-// PORTFOLIO:
+// ON LOAD ANIMATIONS:
+
+/*
+
+const divHome = document.querySelector('.div-home');
+
+function showDivHome() {
+    divHome.style.transitionDuration = '3s';
+    divHome.style.visibility = 'visible';  
+}
+
+*/
+
+// PROJECTS:
 
 const pOne = document.querySelector('#p1');
 const pTwo = document.querySelector('#p2');
@@ -50,7 +63,7 @@ function esconderProjetoOverlayQuatro() {
 }
 
 
-// HABILIDADES:
+// SKILLS:
 
 const textSkillNone = document.querySelector('.text-skill-none');
 const divTextSkillHtml = document.querySelector('.div-text-skill-html');

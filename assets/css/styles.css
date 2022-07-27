@@ -56,12 +56,16 @@ html, body {
     padding-bottom: .6rem;
 }
 
+#btn-menu {
+    display: none; 
+}
+
 .cartoon-carol {
     height: 55%;
     width: 55%;
 }
 
-.div-home{
+.div-home {
     margin-top: 12vw;
     display: flex;
     flex-direction: row;
@@ -591,6 +595,10 @@ a:hover {
     padding-left: 9vw;
 }
 
+.div-formacao-titulo-datas {
+    padding-left: 2vw;
+}
+
 .p-formacao-titulo {
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
@@ -738,10 +746,6 @@ h4 span a {
         padding-left: 4vw;
     }
 
-    .div-formacao-titulo-datas {
-        padding-left: 2vw;
-    }
-
     .p-formacao-titulo {
         font-weight: 600;
         font-size: 1rem;
@@ -792,6 +796,16 @@ h4 span a {
     }
 
 }
+
+@media screen and (max-width: 780px) {
+
+    .navbar ul {
+        display: none;
+    }
+
+    #btn-menu {
+        display: block;
+    }
 
 @media screen and (max-width: 510px) {
 
