@@ -22,6 +22,8 @@ html, body {
     --white-color: #F8F8F2;
 }
 
+/* navBar: */
+
 .navbar {
     width: 100%;
     display: flex;
@@ -52,10 +54,6 @@ html, body {
     padding-left: 2.6vw;
     padding-top: .6rem;
     padding-bottom: .6rem;
-}
-
-main {
-    margin-top: 5rem;
 }
 
 .cartoon-carol {
@@ -91,18 +89,62 @@ h2 {
     font-size: 3vw;
 }
 
-.row-animacao {
-    padding-top: 6rem;
-    padding-left: 3.75rem;
-    padding-bottom: 2rem;
+/* arrow: */
+
+.div-arrow {
+    width: 100%;
+    position: relative;
+    padding-top: 8rem;
 }
 
-.fantasminha {
-    position: absolute;
-    max-width: 24rem;
-    animation: fantasminha-animation 15s linear infinite;
-    z-index: 1;
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
 }
+
+.arrows path {
+	stroke: var(--accent3-color);
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
 
 .curved {
     background: var(--background2-color);
@@ -635,6 +677,19 @@ h4 {
 
 h4 span a {
     color: var(--accent3-color);
+}
+
+.row-animacao {
+    padding-top: 6rem;
+    padding-left: 3.75rem;
+    padding-bottom: 2rem;
+}
+
+.fantasminha {
+    position: absolute;
+    max-width: 24rem;
+    animation: fantasminha-animation 15s linear infinite;
+    z-index: 1;
 }
 
 @keyframes fantasminha-animation {
