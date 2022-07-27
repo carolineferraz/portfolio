@@ -34,18 +34,17 @@ html, body {
     margin-bottom: 5vw;
     box-shadow: 2px 2px 12px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    justify-content: space-between;
 }
 
 #logo {
     width: 1.7rem;
     height: 1.7rem;
-    justify-self: flex-start;
     cursor: pointer;
 }
 
 .navbar ul {
     margin-bottom: 0;
-    justify-self: end;
     padding-right: 1vw;
 }
 
@@ -423,7 +422,6 @@ p {
     display: flex;
     justify-content: start;
     padding-left: 5vw;
-    
 }
 
 .div-contacts {
@@ -801,12 +799,25 @@ h4 span a {
 @media screen and (max-width: 780px) {
 
     .navbar ul {
+        display: flex;
+        flex-direction: column;
         display: none;
     }
 
-    #btn-menu {
-        display: block;
+    #logo {
+        display: none;
     }
+
+    .navbar ul li:hover {
+        background-color: var(--accent3-color);
+    }
+
+    #btn-menu {
+        display: flex;
+        justify-self: end;
+        align-self: flex-start;
+    }
+}
 
 @media screen and (max-width: 510px) {
 
