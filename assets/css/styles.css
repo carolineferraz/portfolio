@@ -9,10 +9,7 @@
 
 html, body {
     background-color: var(--background1-color);
-}
-
-html {
-    height: 0;
+    overflow-x: hidden;
 }
 
 :root {
@@ -25,15 +22,39 @@ html {
 }
 
 .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
     background-color: var(--background2-color);
-    top: 10rem;
-    position: static;
+    top: 0;
+    position: fixed;
     margin-bottom: 5vw;
+    box-shadow: 2px 2px 12px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#logo {
+    width: 1.7rem;
+    height: 1.7rem;
+    justify-self: flex-start;
+    cursor: pointer;
+}
+
+.navbar ul {
+    margin-bottom: 0;
+    justify-self: end;
+    padding-right: 1vw;
 }
 
 .navbar-anchor {
     color: var(--white-color);
-    padding: 2vw;
+    padding-left: 2.6vw;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+main {
+    margin-top: 5rem;
 }
 
 .cartoon-carol {
@@ -42,6 +63,7 @@ html {
 }
 
 .div-home{
+    margin-top: 12vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
