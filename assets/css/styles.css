@@ -153,6 +153,8 @@ h2 {
     width: 100%;
 }
 
+/* main: */
+
 h3 {
     color: var(--accent1-color);
     font-family: 'Roboto Mono', monospace;
@@ -720,6 +722,10 @@ h4 span a {
         font-size: 1.5rem;
     }
 
+    .text-aboutme {
+        line-height: 1.6rem;
+    }
+
     .green-icon {
         font-size: 1.3rem;
     }
@@ -732,15 +738,23 @@ h4 span a {
         padding-left: 4vw;
     }
 
+    .div-formacao-titulo-datas {
+        padding-left: 2vw;
+    }
+
     .p-formacao-titulo {
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .p-formacao-datas {
         font-weight: 500;
         text-align: left;
-        font-size: .95rem;
+        font-size: .8rem;
+    }
+
+    .p-formacao {
+        font-size: .9rem;
     }
 
     .cartoon-carol {
@@ -786,11 +800,16 @@ h4 span a {
     }
 
     .green-icon {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     p {
         font-size: 1rem;
+    }
+
+    .div-formacao-titulo-datas {
+        padding: 0;
+        margin: 0;
     }
 
     .p-formacao-titulo {
