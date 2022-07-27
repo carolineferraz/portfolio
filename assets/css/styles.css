@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syncopate&display=swap');
 
-*, html, body {
+*,
+html,
+body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     background-color: var(--background1-color);
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -26,6 +29,7 @@ html, body {
 
 .navbar {
     width: 100%;
+    height: 4rem;
     display: flex;
     align-items: center;
     background-color: var(--background2-color);
@@ -43,13 +47,13 @@ html, body {
     cursor: pointer;
 }
 
+/* .div-menu {
+    
+} */
+
 .navbar .ul-menu {
     margin-bottom: 0;
     padding-right: 1vw;
-}
-
-.navbar .active .ul-menu {
-    display: flex;
 }
 
 .navbar-anchor {
@@ -60,7 +64,14 @@ html, body {
 }
 
 #btn-menu {
-    display: none; 
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+    background-image: url("../img/btn-menu.png");
+    display: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 #btn-menu:hover {
@@ -109,51 +120,77 @@ h2 {
 }
 
 .arrows {
-	width: 60px;
-	height: 72px;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 20px;
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
 }
 
 .arrows path {
-	stroke: var(--accent3-color);
-	fill: transparent;
-	stroke-width: 1px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+    stroke: var(--accent3-color);
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
 .arrows path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
 }
 
-.arrows path.a3 {	
-	animation-delay:0s;
-	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
 }
 
 
@@ -488,7 +525,7 @@ p {
     width: 20.5rem;
     height: 11.5rem;
     border-radius: 3rem;
-    margin: 2vw; 
+    margin: 2vw;
 }
 
 .projeto ul {
@@ -529,7 +566,10 @@ p {
     border: 3px solid var(--accent3-color);
 }
 
-#p1, #p2, #p3, #p4 {
+#p1,
+#p2,
+#p3,
+#p4 {
     visibility: hidden;
 }
 
@@ -548,7 +588,7 @@ p {
 
 #projeto-anchor {
     color: var(--white-color);
-    
+
 }
 
 #projeto-anchor:hover {
@@ -713,22 +753,18 @@ h4 span a {
     from {
         left: -24rem;
     }
+
     to {
         left: 100%;
     }
 
 }
 
-@media screen and (max-width: 1080px) {
-
-    
-    
-
-}
+@media screen and (max-width: 1080px) {}
 
 @media screen and (max-width: 900px) {
 
-    .div-home{
+    .div-home {
         flex-direction: column;
         margin-left: 4vw;
     }
@@ -761,7 +797,7 @@ h4 span a {
         font-weight: 600;
         font-size: 1rem;
     }
-    
+
     .p-formacao-datas {
         font-weight: 500;
         text-align: left;
@@ -776,14 +812,14 @@ h4 span a {
         height: 33%;
         width: 33%;
     }
-    
-    .div-home{
+
+    .div-home {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
     }
-    
+
     .div-foto {
         width: 100%;
     }
@@ -799,7 +835,7 @@ h4 span a {
         color: var(--accent2-color);
         font-size: 7.6vw;
     }
-    
+
     h2 {
         font-family: 'Syncopate', sans-serif;
         color: var(--accent1-color);
@@ -811,18 +847,28 @@ h4 span a {
 @media screen and (max-width: 780px) {
 
     .ul-menu {
+        display: none;
+    }
+
+    .navbar .active #btn-menu {
+        background-image: url("../img/btn-menu-close.png");
+        background-size: 1.3rem;
+    }
+
+    .navbar .active .ul-menu {
+        position: absolute;
+        width: 100%;
+        top: 4rem;
+        right: 0;
+        background: var(--background2-color);
         display: flex;
         flex-direction: column;
-        display: none;
+        box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.2);
     }
 
-    /* #logo {
-        display: none;
-    } */
-
-    .navbar ul li:hover {
+    /* .navbar ul li:hover {
         background-color: var(--accent3-color);
-    }
+    } */
 
     #btn-menu {
         display: flex;
@@ -854,7 +900,7 @@ h4 span a {
         font-weight: 600;
         font-size: 1.05rem;
     }
-    
+
     .p-formacao-datas {
         font-weight: 500;
         text-align: left;
@@ -870,6 +916,3 @@ h4 span a {
     }
 
 }
-
-
-
