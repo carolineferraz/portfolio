@@ -34,18 +34,17 @@ html, body {
     margin-bottom: 5vw;
     box-shadow: 2px 2px 12px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    justify-content: space-between;
 }
 
 #logo {
     width: 1.7rem;
     height: 1.7rem;
-    justify-self: flex-start;
     cursor: pointer;
 }
 
 .navbar ul {
     margin-bottom: 0;
-    justify-self: end;
     padding-right: 1vw;
 }
 
@@ -56,12 +55,16 @@ html, body {
     padding-bottom: .6rem;
 }
 
+#btn-menu {
+    display: none; 
+}
+
 .cartoon-carol {
     height: 55%;
     width: 55%;
 }
 
-.div-home{
+.div-home {
     margin-top: 12vw;
     display: flex;
     flex-direction: row;
@@ -152,6 +155,8 @@ h2 {
     padding-right: 4vw;
     width: 100%;
 }
+
+/* main: */
 
 h3 {
     color: var(--accent1-color);
@@ -417,7 +422,6 @@ p {
     display: flex;
     justify-content: start;
     padding-left: 5vw;
-    
 }
 
 .div-contacts {
@@ -569,6 +573,7 @@ p {
 a:hover {
     color: var(--accent2-color);
     text-decoration: none;
+    transition-duration: 400ms;
 }
 
 .fa-github {
@@ -587,6 +592,10 @@ a:hover {
 
 .div-formacao {
     padding-left: 9vw;
+}
+
+.div-formacao-titulo-datas {
+    padding-left: 2vw;
 }
 
 .p-formacao-titulo {
@@ -720,6 +729,10 @@ h4 span a {
         font-size: 1.5rem;
     }
 
+    .text-aboutme {
+        line-height: 1.6rem;
+    }
+
     .green-icon {
         font-size: 1.3rem;
     }
@@ -734,13 +747,17 @@ h4 span a {
 
     .p-formacao-titulo {
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .p-formacao-datas {
         font-weight: 500;
         text-align: left;
-        font-size: .95rem;
+        font-size: .8rem;
+    }
+
+    .p-formacao {
+        font-size: .9rem;
     }
 
     .cartoon-carol {
@@ -779,6 +796,29 @@ h4 span a {
 
 }
 
+@media screen and (max-width: 780px) {
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .navbar ul li:hover {
+        background-color: var(--accent3-color);
+    }
+
+    #btn-menu {
+        display: flex;
+        justify-self: end;
+        align-self: flex-start;
+    }
+}
+
 @media screen and (max-width: 510px) {
 
     h3 {
@@ -786,11 +826,16 @@ h4 span a {
     }
 
     .green-icon {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     p {
         font-size: 1rem;
+    }
+
+    .div-formacao-titulo-datas {
+        padding: 0;
+        margin: 0;
     }
 
     .p-formacao-titulo {
