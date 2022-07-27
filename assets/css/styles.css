@@ -7,8 +7,12 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100%;
+html, body {
+    background-color: var(--background1-color);
+}
+
+html {
+    height: 0;
 }
 
 :root {
@@ -20,14 +24,22 @@ body {
     --white-color: #F8F8F2;
 }
 
+.navbar {
+    background-color: var(--background2-color);
+    top: 10rem;
+    position: static;
+    margin-bottom: 5vw;
+}
+
+.navbar-anchor {
+    color: var(--white-color);
+    padding: 2vw;
+}
+
 .cartoon-carol {
     height: 55%;
     width: 55%;
 }
-
-/* .row-h2 {
-    padding-right: 6.5rem;
-} */
 
 .div-home{
     display: flex;
@@ -47,7 +59,7 @@ body {
 h1 {
     font-family: 'Syncopate', sans-serif;
     color: var(--accent2-color);
-    font-size: 5.2vw;
+    font-size: 5.35vw;
 }
 
 h2 {
@@ -72,7 +84,7 @@ h2 {
 .curved {
     background: var(--background2-color);
     padding-left: 8vw;
-    padding-right: 8vw;
+    padding-right: 4vw;
     width: 100%;
 }
 
@@ -81,6 +93,7 @@ h3 {
     font-family: 'Roboto Mono', monospace;
     font-size: 2rem;
     padding-left: 4vw;
+    padding-bottom: 4vw;
 }
 
 .span-white {
@@ -90,11 +103,17 @@ h3 {
 p {
     font-family: 'Roboto Mono', monospace;
     color: var(--white-color);
+    line-height: 1.4rem;
     text-align: center;
-    padding-top: 1.3rem;
     font-size: 1.2rem;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 9vw;
     padding-right: 9vw;
+}
+
+.text-aboutme {
+    line-height: 2rem;
 }
 
 .gen-anchor {
@@ -122,14 +141,14 @@ p {
 }
 
 .text-skill-none {
-    height: 15rem;
+    height: 12rem;
     display: flex;
     align-items: center;
 }
 
 .div-text-skill {
     display: none;
-    height: 15rem;
+    height: 12rem;
 }
 
 .title-skill {
@@ -328,8 +347,37 @@ p {
     background-position: center;
 }
 
-.col-contato {
-    padding-right: 30rem;   
+.div-text-contact {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding-left: 5vw;
+    
+}
+
+.div-contacts {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5vw;
+}
+
+.div-contacts-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 4vw;
+}
+
+.div-contacts-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 4vw;
+    width: 100%;
 }
 
 .projects-container {
@@ -364,6 +412,11 @@ p {
     height: 11.5rem;
     border-radius: 3rem;
     margin: 2vw; 
+}
+
+.projeto ul {
+    padding: 0;
+    margin: 0;
 }
 
 .projeto-overlay {
@@ -450,6 +503,7 @@ p {
 
 a:hover {
     color: var(--accent2-color);
+    text-decoration: none;
 }
 
 .fa-github {
@@ -464,6 +518,10 @@ a:hover {
 
 .fa-graduation-cap {
     font-size: 1.8rem;
+}
+
+.div-formacao {
+    padding-left: 9vw;
 }
 
 .p-formacao-titulo {
@@ -497,10 +555,6 @@ a:hover {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-left: 3.75vw;
-    padding-top: 2rem;
   }
 
 ul li {
@@ -522,7 +576,7 @@ ul li a {
     align-self: flex-start;
 }
 
-.contato-anchor {
+.contact-anchor {
     font-family: 'Roboto Mono', monospace;
     color: var(--white-color);
     text-align: center;
@@ -531,7 +585,7 @@ ul li a {
     text-decoration: none;
 }
 
-.contato-anchor:hover {
+.contact-anchor:hover {
     color: var(--accent2-color);
 }
 
@@ -558,11 +612,6 @@ h4 {
 
 h4 span a {
     color: var(--accent3-color);
-}
-
-body, html {
-    background-color: var(--background1-color);
-    padding-top: 5rem;
 }
 
 @keyframes fantasminha-animation {
@@ -601,6 +650,10 @@ body, html {
         font-size: 1rem;
     }
 
+    .div-formacao {
+        padding-left: 4vw;
+    }
+
     .p-formacao-titulo {
         font-weight: 600;
         font-size: 1.2rem;
@@ -637,7 +690,7 @@ body, html {
     h1 {
         font-family: 'Syncopate', sans-serif;
         color: var(--accent2-color);
-        font-size: 7vw;
+        font-size: 7.6vw;
     }
     
     h2 {
@@ -677,7 +730,9 @@ body, html {
         font-size: 1rem;
     }
 
-
+    .contact-anchor {
+        font-size: 1rem;
+    }
 
 }
 
