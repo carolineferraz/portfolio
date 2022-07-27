@@ -575,6 +575,7 @@ p {
 a:hover {
     color: var(--accent2-color);
     text-decoration: none;
+    transition-duration: 400ms;
 }
 
 .fa-github {
