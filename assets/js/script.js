@@ -11,6 +11,18 @@ function showDivHome() {
 
 */
 
+// NAVBAR:
+
+const btnMenu = document.getElementById('btn-menu');
+
+function toggleMenu() {
+    const divMenu = document.querySelector('.div-menu');
+    divMenu.classList.toggle('active');
+
+}
+
+btnMenu.addEventListener('click', toggleMenu);
+
 // PROJECTS:
 
 const pOne = document.querySelector('#p1');
