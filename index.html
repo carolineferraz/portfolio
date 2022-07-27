@@ -16,173 +16,203 @@
 </head>
 
 <body>
-    <div class="col-md-12 m-0 p-0">
 
-        <!-- menu-->
+    <!-- navBar-->
+    <div class="navbar">
+        <img src="./assets/img/logo.png" id="logo" href="#home">
+        <ul>
+            <li>
+                <a class="navbar-anchor" href="#home">home</a>
+            </li>
+            <li>
+                <a class="navbar-anchor" href="#aboutme">about me</a>
+            </li>
+            <li>
+                <a class="navbar-anchor" href="#projects">projects</a>
+            </li>
+            <li>
+                <a class="navbar-anchor" href="#graduation">graduation</a>
+            </li>
+            <li>
+                <a class="navbar-anchor" href="#skills">skills</a>
+            </li>
+            <li>
+                <a class="navbar-anchor" href="#contact">contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /navBar-->
 
-        <!-- /menu-->
-
-        <!-- foto-e-titulo-->
-        <div class="div-home">
-            <div class="d-flex justify-content-center div-foto">
-                <img src="./assets/img/cartoon-profile-img.png" alt="Foto Caroline Ferraz" class="cartoon-carol img-fluid">
+    <!-- photoAndTitle-->
+    <div class="div-home" id="home">
+        <div class="d-flex justify-content-center div-foto">
+            <img src="./assets/img/cartoon-profile-img.png" alt="Foto Caroline Ferraz" class="cartoon-carol img-fluid">
+        </div>
+        <div class="div-name-role">
+            <div class="row">
+                <h1>CAROLINE FERRAZ</h1>
             </div>
-            <div class="div-name-role">
-                <div class="row">
-                    <h1>CAROLINE FERRAZ</h1>
-                </div>
-                <div class="row row-h2">
-                    <h2>FULL STACK WEB DEVELOPER JR</h2>
-                </div>
+            <div class="row row-h2">
+                <h2>FULL STACK WEB DEVELOPER JR</h2>
             </div>
         </div>
-        <!-- /foto-e-titulo-->
+    </div>
 
-        <!-- sobre-mim-->
-        <div class="row mt-5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225">
-                <path fill="#44475A" fill-opacity="1"
-                    d="M0,128L80,133.3C160,139,320,149,480,133.3C640,117,800,75,960,85.3C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-                </path>
-            </svg>
-            <div class="col-md-12 curved">
-                <h3>sobreMim<span class="span-white">() {</span></h3>
-                <p>Olá! Meu nome é Caroline. Sou <strong>Desenvolvedora Full Stack</strong> formada pela <span><a
-                            href="https://brazil.generation.org/" target="_blank" class="gen-anchor">Generation
-                            Brasil</a></span> e estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>.
-                    Tenho conhecimentos em <strong>APIs RESTful</strong> com desenvolvimento back-end em
-                    <strong>Java/Spring</strong> e front-end em <strong>Angular</strong>. Estou sempre buscando
-                    aprimorar minhas soft e hard skills e atualmente estou em busca da minha primeira oportunidade
-                    profissional na área de desenvolvimento web!
-                </p>
-                <h3><span class="span-white">}</span></h3>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#44475A" fill-opacity="1"
-                    d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-                </path>
-            </svg>
+    <div class="div-arrow">
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+    </div>
+    <!-- /photoAndTitle-->
+
+    <!-- aboutMe-->
+    <div class="row">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225">
+            <path fill="#44475A" fill-opacity="1"
+                d="M0,128L80,133.3C160,139,320,149,480,133.3C640,117,800,75,960,85.3C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+        <div class="col-md-12 curved">
+            <h3 id="aboutme">aboutMe<span class="span-white">() {</span></h3>
+            <p class="text-aboutme"><strong>Hi, I’m Carol.</strong> I’m a <strong>Full Stack Web Developer</strong>
+                graduated from <span><a href="https://brazil.generation.org/" target="_blank"
+                        class="gen-anchor">Generation
+                        Brasil</a></span> and a <strong>Systems Development and Analysis</strong> studant that lives in Recife, Brazil. I have a
+                first graduation in Architecture and Urbanism, and in the meantime I was working with architectural (civil construction)
+                projects I started to develop some simple websites and to study programming as a curious, and I got
+                fascinated. Now I live the web development area intensively, and I have knowledge in <strong>RESTful
+                    APIs</strong> development with skills in back-end development with
+                <strong>Java/Spring</strong> and front-end development with <strong>Angular</strong>.
+            </p>
+            <h3><span class="span-white">}</span></h3>
         </div>
-        <!-- /sobre-mim-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#44475A" fill-opacity="1"
+                d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+    <!-- /aboutMe-->
 
-        <!-- portfolio-->
-        <div class="row">
-            <div class="container-portfolio m-0">
-                <div class="row">
-                    <h3 class="mb-5">portfolio<span class="span-white">() {</span></h3>
+    <!-- projects-->
+    <div class="row">
+        <div class="container-portfolio m-0">
+            <div class="row">
+                <h3 class="mb-5" id="projects">projects<span class="span-white">() {</span></h3>
+            </div>
+
+            <div class="projects-container">
+
+                <div class="projeto" id="bg-p1" onmouseover="mostrarProjetoOverlayUm();"
+                    onmouseout="esconderProjetoOverlayUm();">
+                    <div class="projeto-overlay" id="p1">
+                        <h5 class="titulo-projeto">Hey, Bugs!</h5>
+                        <p class="texto-projeto">Full Stack project of a Blog about movies, music and technology.
+                        </p>
+                        <ul class="mt-1 ml-3 p-0">
+                            <li>
+                                <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
+                            </li>
+                            <li>
+                                <a href="https://heybugs.netlify.app/" target="_blank" id="projeto-anchor"><strong>
+                                        See application</strong></a>
+                            </li>
+                        </ul>
+                        <ul class="mt-1 ml-3 p-0">
+                            <li>
+                                <i class="fa-brands fa-github " id="projeto-icon"></i>
+                            </li>
+                            <li>
+                                <a href="https://github.com/carolineferraz/HeyBugs-Backend" target="_blank"
+                                    id="projeto-anchor"><strong> See source code</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="projeto" id="bg-p3" onmouseover="mostrarProjetoOverlayTres();"
+                    onmouseout="esconderProjetoOverlayTres();">
+                    <div class="projeto-overlay" id="p3">
+                        <h5 class="titulo-projeto">Jump Game</h5>
+                        <p class="texto-projeto">A simple game in JavaScript, HTML and CSS.</p>
+                        <ul class="mt-1 ml-3 p-0">
+                            <li>
+                                <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
+                            </li>
+                            <li>
+                                <a href="https://carolineferraz.github.io/js-jump-game/" target="_blank"
+                                    id="projeto-anchor"><strong> See application</strong></a>
+                            </li>
+                        </ul>
+                        <ul class="mt-1 ml-3 p-0">
+                            <li>
+                                <i class="fa-brands fa-github " id="projeto-icon"></i>
+                            </li>
+                            <li>
+                                <a href="https://github.com/carolineferraz/js-jump-game" target="_blank"
+                                    id="projeto-anchor"><strong> See source code</strong></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="projects-container">
+                <div class="projeto" id="bg-p2" onmouseover="mostrarProjetoOverlayDois();"
+                    onmouseout="esconderProjetoOverlayDois();">
+                    <div class="projeto-overlay" id="p2">
+                        <h5 class="titulo-projeto">Controle Financeiro</h5>
+                        <p class="texto-projeto">Front-end of a responsive SPA.</p>
+                        <ul class="mt-1 ml-3 p-0">
+                            <li>
+                                <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
+                            </li>
+                            <li>
+                                <a href="https://carolineferraz.github.io/SPA-responsiva_curso-NewTab-Academy/"
+                                    target="_blank" id="projeto-anchor"><strong> See application</strong></a>
+                            </li>
+                        </ul>
+                        <ul class="mt-1 ml-3 p-0">
+                            <li>
+                                <i class="fa-brands fa-github " id="projeto-icon"></i>
+                            </li>
+                            <li>
+                                <a href="https://github.com/carolineferraz/SPA-responsiva_curso-NewTab-Academy"
+                                    target="_blank" id="projeto-anchor"><strong> See source code</strong></a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <div class="projeto" id="bg-p1" onmouseover="mostrarProjetoOverlayUm();"
-                            onmouseout="esconderProjetoOverlayUm();">
-                            <div class="projeto-overlay" id="p1">
-                                <h5 class="titulo-projeto">Hey, Bugs!</h5>
-                                <p class="texto-projeto">Projeto Full Stack de Blog sobre filmes, música e tecnologia.
-                                </p>
-                                <ul class="mt-1 ml-3 p-0">
-                                    <li>
-                                        <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
-                                    </li>
-                                    <li>
-                                        <a href="https://heybugs.netlify.app/" target="_blank"
-                                            id="projeto-anchor"><strong>
-                                                Ver a Aplicação</strong></a>
-                                    </li>
-                                </ul>
-                                <ul class="mt-1 ml-3 p-0">
-                                    <li>
-                                        <i class="fa-brands fa-github " id="projeto-icon"></i>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/carolineferraz/HeyBugs-Backend" target="_blank"
-                                            id="projeto-anchor"><strong> Ver o Código Fonte</strong></a>
-                                    </li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="projeto" id="bg-p4" onmouseover="mostrarProjetoOverlayQuatro();"
+                    onmouseout="esconderProjetoOverlayQuatro();">
+                    <div class="projeto-overlay" id="p4">
+                        <h5 class="titulo-projeto">Janela Viva</h5>
+                        <p class="texto-projeto">Full Stack project of a Social Network proposal.</p>
+                        <ul class="mt-1 ml-3 p-0">
+                            <li>
+                                <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
+                            </li>
+                            <li>
+                                <a href="https://janelaviva.netlify.app/" target="_blank" id="projeto-anchor"><strong>
+                                        See application</strong></a>
+                            </li>
+                        </ul>
+                        <ul class="mt-1 ml-3 p-0">
+                            <li>
+                                <i class="fa-brands fa-github " id="projeto-icon"></i>
+                            </li>
+                            <li>
+                                <a href="https://github.com/carolineferraz/janela-viva" target="_blank"
+                                    id="projeto-anchor"><strong> See source code</strong></a>
+                            </li>
+                        </ul>
+                    </div>
 
-                        </div>
-                        <div class="projeto" id="bg-p3" onmouseover="mostrarProjetoOverlayTres();"
-                            onmouseout="esconderProjetoOverlayTres();">
-                            <div class="projeto-overlay" id="p3">
-                                <h5 class="titulo-projeto">Jump Game</h5>
-                                <p class="texto-projeto">Jogo em JS, HTML e CSS.</p>
-                                <ul class="mt-1 ml-3 p-0">
-                                    <li>
-                                        <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
-                                    </li>
-                                    <li>
-                                        <a href="https://carolineferraz.github.io/js-jump-game/" target="_blank"
-                                            id="projeto-anchor"><strong> Ver a Aplicação</strong></a>
-                                    </li>
-                                </ul>
-                                <ul class="mt-1 ml-3 p-0">
-                                    <li>
-                                        <i class="fa-brands fa-github " id="projeto-icon"></i>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/carolineferraz/js-jump-game" target="_blank"
-                                            id="projeto-anchor"><strong> Ver o Código Fonte</strong></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="projeto" id="bg-p2" onmouseover="mostrarProjetoOverlayDois();"
-                            onmouseout="esconderProjetoOverlayDois();">
-                            <div class="projeto-overlay" id="p2">
-                                <h5 class="titulo-projeto">Controle Financeiro</h5>
-                                <p class="texto-projeto">Front-end de SPA Responsiva.</p>
-                                <ul class="mt-1 ml-3 p-0">
-                                    <li>
-                                        <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
-                                    </li>
-                                    <li>
-                                        <a href="https://carolineferraz.github.io/SPA-responsiva_curso-NewTab-Academy/"
-                                            target="_blank" id="projeto-anchor"><strong> Ver a Aplicação</strong></a>
-                                    </li>
-                                </ul>
-                                <ul class="mt-1 ml-3 p-0">
-                                    <li>
-                                        <i class="fa-brands fa-github " id="projeto-icon"></i>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/carolineferraz/SPA-responsiva_curso-NewTab-Academy"
-                                            target="_blank" id="projeto-anchor"><strong> Ver o Código Fonte</strong></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="projeto" id="bg-p4" onmouseover="mostrarProjetoOverlayQuatro();"
-                            onmouseout="esconderProjetoOverlayQuatro();">
-                            <div class="projeto-overlay" id="p4">
-                                <h5 class="titulo-projeto">Janela Viva</h5>
-                                <p class="texto-projeto">Projeto Full Stack de uma proposta de Rede Social.</p>
-                                <ul class="mt-1 ml-3 p-0">
-                                    <li>
-                                        <i class="fa-solid fa-link white-icon" id="projeto-icon"> </i>
-                                    </li>
-                                    <li>
-                                        <a href="https://janelaviva.netlify.app/" target="_blank"
-                                            id="projeto-anchor"><strong> Ver a Aplicação</strong></a>
-                                    </li>
-                                </ul>
-                                <ul class="mt-1 ml-3 p-0">
-                                    <li>
-                                        <i class="fa-brands fa-github " id="projeto-icon"></i>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/carolineferraz/janela-viva" target="_blank"
-                                            id="projeto-anchor"><strong> Ver o Código Fonte</strong></a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
+                </div>
 
                 <div class="col-md-12">
-                    <p class="mt-5">Código Fonte e outros projetos no meu GitHub!</p>
+                    <p class="mt-5">See source code and another projects in my GitHub!</p>
                 </div>
                 <div class="row d-flex align-items-center justify-content-center">
                     <ul class="mt-1 p-0">
@@ -202,9 +232,9 @@
 
             </div>
         </div>
-        <!-- /portifolio -->
+        <!-- /projects -->
 
-        <!-- formação -->
+        <!-- graduation -->
         <div class="row">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225">
                 <path fill="#44475A" fill-opacity="1"
@@ -212,42 +242,46 @@
                 </path>
             </svg>
             <div class="col-md-12 curved">
-                <h3>formacao<span class="span-white">() {</span></h3>
-                <ul>
-                    <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
-                    <li>
-                        <div class="col-md-12">
-                            <p class="p-formacao-titulo"> Pessoa Desenvolvedora Java Web</p>
-                            <p class="p-formacao-datas">(Recife-PE | março 2022 - junho 2022)</p>
-                        </div>
-                    </li>
-                </ul>
-                <p class="p-formacao">/* Bootcamp intensivo de TI promovido pela <span><a href="https://brazil.generation.org/"
-                            target="_blank" class="gen-anchor">Generation Brasil</a></span> para formação em
-                    Desenvolvimento Web Full Stack, onde aprimorei soft skills (Business Service Management) e hard
-                    skills em tecnologias/ linguagens
-                    como Java, Spring Boot, MySQL, Angular, HTML, CSS, Git/GitHub
-                    e metodologia ágil Scrum. */</p>
-                <ul>
-                    <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
-                    <li>
-                        <div class="col-md-12">
-                            <p class="p-formacao-titulo"> Análise e Desenvolvimento de Sistemas</p>
-                            <p class="p-formacao-datas">(Recife-PE | fevereiro 2022 - junho 2024) </p>
-                        </div>
-                    </li>
-                </ul>
-                <p class="p-formacao">/* Tecnólogo pela Faculdade Estácio. */</p>
-                <ul>
-                    <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
-                    <li>
-                        <div class="col-md-12">
-                            <p class="p-formacao-titulo"> Arquitetura e Urbanismo</p>
-                            <p class="p-formacao-datas">(Recife-PE | agosto 2014 - dezembro 2019) </p>
-                        </div>
-                    </li>
-                </ul>
-                <p class="p-formacao">/* Curso superior pela Faculdade Ciências Humanas Esuda. */</p>
+                <h3 id="graduation">graduation<span class="span-white">() {</span></h3>
+                <div class="div-formacao">
+                    <ul>
+                        <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
+                        <li>
+                            <div class="col-md-12">
+                                <p class="p-formacao-titulo"> Full Stack/Java Development</p>
+                                <p class="p-formacao-datas">(Recife-PE, Brazil | March 2022 - June 2022)</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="p-formacao">/* Bootcamp intensivo de TI promovido pela <span><a
+                                href="https://brazil.generation.org/" target="_blank" class="gen-anchor">Generation
+                                Brasil</a></span> para formação em
+                        Desenvolvimento Web Full Stack, onde aprimorei soft skills (Business Service Management) e
+                        hard
+                        skills em tecnologias/ linguagens
+                        como Java, Spring Boot, MySQL, Angular, HTML, CSS, Git/GitHub
+                        e metodologia ágil Scrum. */</p>
+                    <ul>
+                        <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
+                        <li>
+                            <div class="col-md-12">
+                                <p class="p-formacao-titulo"> Systems Analysis and Development</p>
+                                <p class="p-formacao-datas">(Recife-PE, Brazil | February 2022 - June 2024) </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="p-formacao">/* Tecnólogo pela Faculdade Estácio. */</p>
+                    <ul>
+                        <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
+                        <li>
+                            <div class="col-md-12">
+                                <p class="p-formacao-titulo"> Architecture and Urbanism</p>
+                                <p class="p-formacao-datas">(Recife-PE, Brazil | August 2014 - December 2019) </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="p-formacao">/* Curso superior pela Faculdade Ciências Humanas Esuda. */</p>
+                </div>
                 <h3><span class="span-white">}</span></h3>
 
             </div>
@@ -257,21 +291,23 @@
                 </path>
             </svg>
         </div>
-        <!-- /formação -->
+        <!-- /graduation -->
 
-        <!-- habilidades -->
+        <!-- skills -->
         <div class="row">
             <div class="col-md-12 container-skills">
-                <h3>habilidades<span class="span-white">() {</span></h3>
+                <h3 id="skills">skills<span class="span-white">() {</span></h3>
                 <div class="col-md-10 justify-content-center col-skills">
 
                     <div class="row mt-3 d-flex justify-content-center">
 
-                        <p class="text-skill-none">/* Passe o cursor por cima dos ícones para ver a descrição! */</p>
+                        <p class="text-skill-none">/* Passe o cursor por cima dos ícones para ver a descrição! */
+                        </p>
 
                         <div class="div-text-skill div-text-skill-html">
                             <p class="title-skill title-html">HTML5</p>
-                            <p class="text-skill text-html">Linguagem de marcação de HiperTexto, que define a estrutura
+                            <p class="text-skill text-html">Linguagem de marcação de HiperTexto, que define a
+                                estrutura
                                 do conteúdo de uma página web.</p>
                         </div>
                         <div class="div-text-skill div-text-skill-css">
@@ -282,23 +318,29 @@
                         </div>
                         <div class="div-text-skill div-text-skill-js">
                             <p class="title-skill title-js">JavaScript</p>
-                            <p class="text-skill text-js">Uma das linguagens de programação mais utilizadas no mundo,
+                            <p class="text-skill text-js">Uma das linguagens de programação mais utilizadas no
+                                mundo,
                                 por suportar vários paradigmas de programação. No front-end é muito utilizada para
                                 adicionar mais dinamicidade à experiência do usuário.</p>
                         </div>
                         <div class="div-text-skill div-text-skill-ts">
                             <p class="title-skill title-ts">TypeScript</p>
-                            <p class="text-skill text-ts">Versão mais fortemente tipada do JavaScript, que proporciona a
-                                implementação do paradigma da Programação Orientada a Objetos a essa linguagem dentro do
+                            <p class="text-skill text-ts">Versão mais fortemente tipada do JavaScript, que
+                                proporciona a
+                                implementação do paradigma da Programação Orientada a Objetos a essa linguagem
+                                dentro do
                                 desenvolvimento front-end. Utilizo o TypeScript dentro do framework Angular.</p>
                         </div>
                         <div class="div-text-skill div-text-skill-angular">
                             <p class="title-skill title-angular">Angular</p>
-                            <p class="text-skill text-angular">Framework que disponibiliza um ambiente para desenvolvimento do front-end de aplicações web através de uma arquitetura baseada em componentes.</p>
+                            <p class="text-skill text-angular">Framework que disponibiliza um ambiente para
+                                desenvolvimento do front-end de aplicações web através de uma arquitetura baseada em
+                                componentes.</p>
                         </div>
                         <div class="div-text-skill div-text-skill-java">
                             <p class="title-skill title-java">Java</p>
-                            <p class="text-skill text-java">Linguagem de programação interpretada e fortemente tipada
+                            <p class="text-skill text-java">Linguagem de programação interpretada e fortemente
+                                tipada
                                 responsável pela disseminação da Programação Orientada a Objetos. Utilizo o Java no
                                 desenvolvimento back-end de APIs RESTful.</p>
                         </div>
@@ -310,8 +352,10 @@
                         </div>
                         <div class="div-text-skill div-text-skill-mysql">
                             <p class="title-skill title-mysql">MySQL</p>
-                            <p class="text-skill text-mysql">Sistema de gerenciamento de banco de dados relacional em
-                                linguagem SQL. Utilizo o MySQL Workbench durante o desenvolvimento do back-end da API,
+                            <p class="text-skill text-mysql">Sistema de gerenciamento de banco de dados relacional
+                                em
+                                linguagem SQL. Utilizo o MySQL Workbench durante o desenvolvimento do back-end da
+                                API,
                                 onde aplico a pesistência de dados com o JPA Hibernate e realizo testes do CRUD da
                                 aplicação juntamente com o Postman.</p>
                         </div>
@@ -319,13 +363,15 @@
                             <p class="title-skill title-git">Git/ GitHub/ Git Workflow</p>
                             <p class="text-skill">O <strong>Git</strong> é um sistema de versionamento de
                                 código. O <strong>GitHub</strong> é um serviço em
-                                nuvem que permite a hospedagem de repositórios Git. E o <strong>Git Workflow</strong> é
+                                nuvem que permite a hospedagem de repositórios Git. E o <strong>Git
+                                    Workflow</strong> é
                                 uma metodologia de gerenciamento do fluxo de trabalho de um projeto.</p>
                         </div>
                         <div class="div-text-skill div-text-skill-scrum">
                             <p class="title-skill title-git">Metodologia Ágil Scrum</p>
                             <p class="text-skill">O Scrum é um framework organizacional de gerenciamento de
-                                projetos, que visa o tratamento de problemas complexos de forma adaptativa e produtiva,
+                                projetos, que visa o tratamento de problemas complexos de forma adaptativa e
+                                produtiva,
                                 para a entrega de resultados de alto valor.</p>
                         </div>
 
@@ -372,60 +418,69 @@
         </div>
         <!-- /habilidades -->
 
-        <!-- contato -->
+        <!-- contact -->
         <div class="row">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225">
                 <path fill="#44475A" fill-opacity="1"
                     d="M0,128L80,133.3C160,139,320,149,480,133.3C640,117,800,75,960,85.3C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
                 </path>
             </svg>
-            <div class="col-md-12 curved col-contato">
-                <h3>contato<span class="span-white">() {</span></h3>
-                <p class="mt-3">Me acompanhe nas redes sociais ou entre em contato! :)</p>
-                <div class="col-md-10">
-                    <ul class="mt-0 ml-5 pt-0">
-                        <li>
-                            <i class="fa-brands fa-linkedin green-icon"></i>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/ferraz-caroline/" target="_blank"
-                                class="contato-anchor"><strong class="ml-3"> linkedin/in/ferraz-caroline</strong></a>
-                        </li>
-                    </ul>
-                    <ul class="mt-0 ml-5 pt-1">
-                        <li>
-                            <i class="fa-brands fa-github green-icon"></i>
-                        </li>
-                        <li>
-                            <a href="https://github.com/carolineferraz/" target="_blank" class="contato-anchor"><strong
-                                    class="ml-3"> github.com/carolineferraz</strong></a>
-                        </li>
-                    </ul>
-                    <ul class="mt-0 ml-5 pt-1">
-                        <li>
-                            <i class="fa-solid fa-at green-icon"></i>
-                        </li>
-                        <li>
-                            <strong class="ml-3 contato-anchor"> projetos.crrz@gmail.com</strong>
-                        </li>
-                    </ul>
-                    <ul class="mt-0 ml-5 pt-1">
-                        <li>
-                            <i class="fa-solid fa-mobile-screen-button green-icon"></i>
-                        </li>
-                        <li>
-                            <strong class="ml-3 contato-anchor"> 55+ 81 9 9180 4497</strong>
-                        </li>
-                    </ul>
-                    <ul class="mt-0 ml-5 pt-1">
-                        <li>
-                            <i class="fa-solid fa-location-dot green-icon"></i>
-                        </li>
-                        <li>
-                            <strong class="ml-3 contato-anchor"> Recife - PE</strong>
-                        </li>
-                    </ul>
-
+            <div class="col-md-12 curved">
+                <h3 id="contact">contact<span class="span-white">() {</span></h3>
+                <div class="div-contacts">
+                    <div class="div-contacts-col">
+                        <ul class="mt-0 ml-5 pt-0">
+                            <li>
+                                <i class="fa-brands fa-linkedin green-icon"></i>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ferraz-caroline/" target="_blank"
+                                    class="contact-anchor"><strong class="ml-3">
+                                        linkedin/in/ferraz-caroline</strong></a>
+                            </li>
+                        </ul>
+                        <ul class="mt-0 ml-5 pt-1">
+                            <li>
+                                <i class="fa-brands fa-github green-icon"></i>
+                            </li>
+                            <li>
+                                <a href="https://github.com/carolineferraz/" target="_blank"
+                                    class="contact-anchor"><strong class="ml-3">
+                                        github.com/carolineferraz</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="div-contacts-col">
+                        <ul class="mt-0 ml-5 pt-1">
+                            <li>
+                                <i class="fa-solid fa-at green-icon"></i>
+                            </li>
+                            <li>
+                                <strong class="ml-3 contact-anchor"> projetos.crrz@gmail.com</strong>
+                            </li>
+                        </ul>
+                        <ul class="mt-0 ml-5 pt-1">
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button green-icon"></i>
+                            </li>
+                            <li>
+                                <strong class="ml-3 contact-anchor"> 55+ 81 9 9180 4497</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="div-contacts-row">
+                        <ul class="mt-0 ml-5 pt-1">
+                            <li>
+                                <i class="fa-solid fa-location-dot green-icon"></i>
+                            </li>
+                            <li>
+                                <strong class="ml-3 contact-anchor"> Recife - PE</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div-text-contact">
+                    <p class="p-contact">/* Follow me on social media or contact me! :) */</p>
                 </div>
                 <h3><span class="span-white">}</span></h3>
 
@@ -437,7 +492,7 @@
                 </path>
             </svg>
         </div>
-        <!-- /contato -->
+        <!-- /contact -->
 
         <div class="row row-animacao m-0">
             <img src="./assets/img/ghost.svg" class="fantasminha">
@@ -459,7 +514,7 @@
                     </li>
                     <li>
                         <a href="https://drive.google.com/file/d/12I05DC8FxmI0psUbE9yIQ2OFwa5iUInW/view?usp=sharing"
-                            target="_blank"> <strong class="cv-anchor ml-2">Currículo em PDF</strong></a>
+                            target="_blank"> <strong class="cv-anchor ml-2">CV in PDF</strong></a>
                     </li>
                 </ul>
                 <br>
