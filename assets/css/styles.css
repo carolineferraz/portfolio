@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate&display=swap');
 
 *,
 html,
@@ -218,7 +219,7 @@ h3 {
 p {
     font-family: 'Roboto Mono', monospace;
     color: var(--white-color);
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     text-align: center;
     font-size: 1.2rem;
     padding-top: 0;
@@ -228,7 +229,7 @@ p {
 }
 
 .text-aboutme {
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 .gen-anchor {
@@ -494,6 +495,14 @@ p {
     width: 100%;
 }
 
+.div-contacts-col ul {
+    margin-left: 4vw;
+}
+
+.div-contacts-row ul {
+    margin-left: 4vw;
+}
+
 .projects-container {
     display: flex;
     flex-direction: row;
@@ -584,6 +593,7 @@ p {
     line-height: 1.3rem;
     margin: .5rem 0 .5rem 0;
     padding: 0;
+    margin: .2rem;
 }
 
 #projeto-anchor {
@@ -610,7 +620,7 @@ p {
 }
 
 .portfolio-github-anchor {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     color: var(--white-color);
     text-align: center;
     padding-top: .9rem;
@@ -647,7 +657,8 @@ a:hover {
 }
 
 .p-formacao-titulo {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
     font-weight: 600;
     color: var(--white-color);
     text-align: left;
@@ -657,7 +668,8 @@ a:hover {
 }
 
 .p-formacao-datas {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
     font-weight: 500;
     color: var(--white-color);
     text-align: left;
@@ -711,6 +723,10 @@ ul li a {
     color: var(--accent2-color);
 }
 
+.contact-link:hover {
+    letter-spacing: 2px;
+}
+
 .cv-anchor {
     color: var(--white-color);
     font-size: 2rem;
@@ -729,7 +745,7 @@ ul li a {
 
 h4 {
     color: var(--accent3-color);
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 h4 span a {
@@ -867,12 +883,27 @@ h4 span a {
     }
 
     .navbar .active .ul-menu li a {
-        padding-left: 72vw;
+        padding-left: 68vw;
     }
 
-    /* .navbar ul li:hover {
+    .active .ul-menu li {
+        border-bottom: solid 1px rgba(222, 222, 222, .1)
+    }
+    
+    .active .ul-menu li:hover {
         background-color: var(--accent3-color);
-    } */
+    }
+    
+    .active .navbar-anchor {
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        font-size: 1.1rem;
+    }
+    
+    .active .navbar-anchor:hover {
+        color: var(--white-color);
+        letter-spacing: 5px;
+    }
 
     #btn-menu {
         display: flex;
@@ -917,6 +948,14 @@ h4 span a {
 
     .contact-anchor {
         font-size: 1rem;
+    }
+
+    .div-contacts-col ul {
+        margin-left: 0;
+    }
+
+    .div-contacts-row ul {
+        margin-left: 0;
     }
 
 }
