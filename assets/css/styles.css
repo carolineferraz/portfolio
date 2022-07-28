@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate&display=swap');
 
-*, html, body {
+*,
+html,
+body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     background-color: var(--background1-color);
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -26,6 +30,7 @@ html, body {
 
 .navbar {
     width: 100%;
+    height: 4rem;
     display: flex;
     align-items: center;
     background-color: var(--background2-color);
@@ -43,7 +48,11 @@ html, body {
     cursor: pointer;
 }
 
-.navbar ul {
+/* .div-menu {
+    
+} */
+
+.navbar .ul-menu {
     margin-bottom: 0;
     padding-right: 1vw;
 }
@@ -56,7 +65,18 @@ html, body {
 }
 
 #btn-menu {
-    display: none; 
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+    background-image: url("../img/btn-menu.png");
+    display: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#btn-menu:hover {
+    opacity: 70%;
 }
 
 .cartoon-carol {
@@ -101,51 +121,77 @@ h2 {
 }
 
 .arrows {
-	width: 60px;
-	height: 72px;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	bottom: 20px;
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
 }
 
 .arrows path {
-	stroke: var(--accent3-color);
-	fill: transparent;
-	stroke-width: 1px;	
-	animation: arrow 2s infinite;
-	-webkit-animation: arrow 2s infinite; 
+    stroke: var(--accent3-color);
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+    {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
 }
 
 .arrows path.a1 {
-	animation-delay:-1s;
-	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+    /* Safari 和 Chrome */
 }
 
 .arrows path.a2 {
-	animation-delay:-0.5s;
-	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+    /* Safari 和 Chrome */
 }
 
-.arrows path.a3 {	
-	animation-delay:0s;
-	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    /* Safari 和 Chrome */
 }
 
 
@@ -173,7 +219,7 @@ h3 {
 p {
     font-family: 'Roboto Mono', monospace;
     color: var(--white-color);
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     text-align: center;
     font-size: 1.2rem;
     padding-top: 0;
@@ -183,7 +229,7 @@ p {
 }
 
 .text-aboutme {
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 .gen-anchor {
@@ -449,6 +495,14 @@ p {
     width: 100%;
 }
 
+.div-contacts-col ul {
+    margin-left: 4vw;
+}
+
+.div-contacts-row ul {
+    margin-left: 4vw;
+}
+
 .projects-container {
     display: flex;
     flex-direction: row;
@@ -480,7 +534,7 @@ p {
     width: 20.5rem;
     height: 11.5rem;
     border-radius: 3rem;
-    margin: 2vw; 
+    margin: 2vw;
 }
 
 .projeto ul {
@@ -521,7 +575,10 @@ p {
     border: 3px solid var(--accent3-color);
 }
 
-#p1, #p2, #p3, #p4 {
+#p1,
+#p2,
+#p3,
+#p4 {
     visibility: hidden;
 }
 
@@ -536,11 +593,12 @@ p {
     line-height: 1.3rem;
     margin: .5rem 0 .5rem 0;
     padding: 0;
+    margin: .2rem;
 }
 
 #projeto-anchor {
     color: var(--white-color);
-    
+
 }
 
 #projeto-anchor:hover {
@@ -562,7 +620,7 @@ p {
 }
 
 .portfolio-github-anchor {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
     color: var(--white-color);
     text-align: center;
     padding-top: .9rem;
@@ -599,7 +657,8 @@ a:hover {
 }
 
 .p-formacao-titulo {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
     font-weight: 600;
     color: var(--white-color);
     text-align: left;
@@ -609,7 +668,8 @@ a:hover {
 }
 
 .p-formacao-datas {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
     font-weight: 500;
     color: var(--white-color);
     text-align: left;
@@ -629,10 +689,10 @@ a:hover {
 
 ul {
     list-style-type: none;
-  }
+}
 
 ul li {
-    display:inline-flex;
+    display: inline-flex;
     margin: 0;
     padding: 0;
 }
@@ -663,6 +723,10 @@ ul li a {
     color: var(--accent2-color);
 }
 
+.contact-link:hover {
+    letter-spacing: 2px;
+}
+
 .cv-anchor {
     color: var(--white-color);
     font-size: 2rem;
@@ -681,7 +745,7 @@ ul li a {
 
 h4 {
     color: var(--accent3-color);
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 
 h4 span a {
@@ -705,24 +769,24 @@ h4 span a {
     from {
         left: -24rem;
     }
+
     to {
         left: 100%;
     }
 
 }
 
-@media screen and (max-width: 1080px) {
-
-    
-    
-
-}
+@media screen and (max-width: 1080px) {}
 
 @media screen and (max-width: 900px) {
 
-    .div-home{
+    .div-home {
         flex-direction: column;
         margin-left: 4vw;
+    }
+
+    .cartoon-carol {
+        margin-top: 2rem;
     }
 
     h3 {
@@ -749,7 +813,7 @@ h4 span a {
         font-weight: 600;
         font-size: 1rem;
     }
-    
+
     .p-formacao-datas {
         font-weight: 500;
         text-align: left;
@@ -764,14 +828,14 @@ h4 span a {
         height: 33%;
         width: 33%;
     }
-    
-    .div-home{
+
+    .div-home {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
     }
-    
+
     .div-foto {
         width: 100%;
     }
@@ -787,7 +851,7 @@ h4 span a {
         color: var(--accent2-color);
         font-size: 7.6vw;
     }
-    
+
     h2 {
         font-family: 'Syncopate', sans-serif;
         color: var(--accent1-color);
@@ -798,18 +862,47 @@ h4 span a {
 
 @media screen and (max-width: 780px) {
 
-    .navbar ul {
+    .ul-menu {
+        display: none;
+    }
+
+    .navbar .active #btn-menu {
+        background-image: url("../img/btn-menu-close.png");
+        background-size: 1.3rem;
+    }
+
+    .navbar .active .ul-menu {
+        position: absolute;
+        width: 100%;
+        top: 4rem;
+        right: 0;
+        background: var(--background2-color);
         display: flex;
         flex-direction: column;
-        display: none;
+        box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.2);
     }
 
-    #logo {
-        display: none;
+    .navbar .active .ul-menu li a {
+        padding-left: 68vw;
     }
 
-    .navbar ul li:hover {
+    .active .ul-menu li {
+        border-bottom: solid 1px rgba(222, 222, 222, .1)
+    }
+    
+    .active .ul-menu li:hover {
         background-color: var(--accent3-color);
+    }
+    
+    .active .navbar-anchor {
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        font-size: 1.1rem;
+    }
+    
+    .active .navbar-anchor:hover {
+        color: var(--white-color);
+        letter-spacing: 5px;
     }
 
     #btn-menu {
@@ -842,7 +935,7 @@ h4 span a {
         font-weight: 600;
         font-size: 1.05rem;
     }
-    
+
     .p-formacao-datas {
         font-weight: 500;
         text-align: left;
@@ -857,7 +950,12 @@ h4 span a {
         font-size: 1rem;
     }
 
+    .div-contacts-col ul {
+        margin-left: 0;
+    }
+
+    .div-contacts-row ul {
+        margin-left: 0;
+    }
+
 }
-
-
-
