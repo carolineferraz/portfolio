@@ -1,15 +1,21 @@
-// ON LOAD ANIMATIONS:
+// SCROLL ANIMATION:
 
-/*
+const observer = new IntersectionObserver(entries => {
+    console.log(entries)
 
-const divHome = document.querySelector('.div-home');
+    Array.from(entries).forEach(entry => {
+        if (entry.intersectionRatio >= 0.5) {
+            entry.target.classList.add('init-hidden-off')
+        }
+    })
+}, {
+    threshold: [0, .5, 1]
+});
 
-function showDivHome() {
-    divHome.style.transitionDuration = '3s';
-    divHome.style.visibility = 'visible';  
-}
+Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+    observer.observe(element);
+});
 
-*/
 
 // NAVBAR:
 
