@@ -33,9 +33,6 @@
                     <a class="navbar-anchor" href="#projects">projects</a>
                 </li>
                 <li>
-                    <a class="navbar-anchor" href="#graduation">graduation</a>
-                </li>
-                <li>
                     <a class="navbar-anchor" href="#skills">skills</a>
                 </li>
                 <li>
@@ -47,7 +44,7 @@
     <!-- /navBar-->
 
     <!-- photoAndTitle-->
-    <div class="div-home" id="home">
+    <div class="div-home init-hidden" id="home">
         <div class="d-flex justify-content-center div-foto">
             <img src="./assets/img/cartoon-profile-img.png" alt="Cartoon of Caroline Ferraz"
                 class="cartoon-carol img-fluid">
@@ -80,15 +77,19 @@
         </svg>
         <div class="col-md-12 curved">
             <h3 id="aboutme">aboutMe<span class="span-white">() {</span></h3>
-            <p class="text-aboutme"><strong>Hi, I’m Carol.</strong> I’m a <strong>Full Stack Web Developer</strong>
+            <p class="text-aboutme init-hidden"><strong>Hi, I’m Carol.</strong> I’m a <strong>Full Stack Web
+                    Developer</strong>
                 graduated from <span><a href="https://brazil.generation.org/" target="_blank"
                         class="gen-anchor">Generation
                         Brasil</a></span> and a <strong>Systems Development and Analysis</strong> studant that lives in
                 Recife, Brazil.</p>
-                <p class="text-aboutme">I have a
-                first graduation in Architecture and Urbanism, and in the meantime I was working with architectural projects (in civil construction) I started to study programming as a curious and to develop some simple websites, and I became
+            <p class="text-aboutme init-hidden">I have a
+                first graduation in Architecture and Urbanism, and in the meantime I was working with architectural
+                projects (in civil construction) I started to study programming as a curious and to develop some simple
+                websites, and I became
                 fascinated for the web development area.</p>
-                <p class="text-aboutme">Now I live the web development intensively, and I have knowledge in <strong>RESTful
+            <p class="text-aboutme init-hidden">Now I live the web development intensively, and I have knowledge in
+                <strong>RESTful
                     APIs</strong> development with skills in back-end using
                 <strong>Java/Spring</strong> and front-end using <strong>Angular</strong>.
             </p>
@@ -111,7 +112,7 @@
 
             <div class="projects-container">
 
-                <div class="projeto" id="bg-p1" onmouseover="mostrarProjetoOverlayUm();"
+                <div class="projeto init-hidden" id="bg-p1" onmouseover="mostrarProjetoOverlayUm();"
                     onmouseout="esconderProjetoOverlayUm();">
                     <div class="projeto-overlay" id="p1">
                         <h5 class="titulo-projeto">Hey, Bugs!</h5>
@@ -138,7 +139,7 @@
                     </div>
 
                 </div>
-                <div class="projeto" id="bg-p3" onmouseover="mostrarProjetoOverlayTres();"
+                <div class="projeto init-hidden" id="bg-p3" onmouseover="mostrarProjetoOverlayTres();"
                     onmouseout="esconderProjetoOverlayTres();">
                     <div class="projeto-overlay" id="p3">
                         <h5 class="titulo-projeto">Jump Game</h5>
@@ -164,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="projeto" id="bg-p2" onmouseover="mostrarProjetoOverlayDois();"
+                <div class="projeto init-hidden" id="bg-p2" onmouseover="mostrarProjetoOverlayDois();"
                     onmouseout="esconderProjetoOverlayDois();">
                     <div class="projeto-overlay" id="p2">
                         <h5 class="titulo-projeto">Controle Financeiro</h5>
@@ -190,7 +191,7 @@
                     </div>
 
                 </div>
-                <div class="projeto" id="bg-p4" onmouseover="mostrarProjetoOverlayQuatro();"
+                <div class="projeto init-hidden" id="bg-p4" onmouseover="mostrarProjetoOverlayQuatro();"
                     onmouseout="esconderProjetoOverlayQuatro();">
                     <div class="projeto-overlay" id="p4">
                         <h5 class="titulo-projeto">Janela Viva</h5>
@@ -217,17 +218,18 @@
 
                 </div>
 
-                <div class="col-md-12">
-                    <p  class="p-formacao mt-5">/* See source code and another projects in my GitHub! */</p>
-                </div>
-                <div class="row d-flex align-items-center justify-content-center">
+                <div class="row d-flex align-items-center justify-content-center init-hidden">
+                    <div class="col-md-12">
+                        <p class="p-formacao mt-5">/* See source code and another projects in my GitHub! */</p>
+                    </div>
                     <ul class="mt-1 p-0">
                         <li>
                             <i class="fa-brands fa-github green-icon"></i>
                         </li>
                         <li>
                             <a href="https://github.com/carolineferraz/" target="_blank"
-                                class="portfolio-github-anchor contact-link"><strong> github.com/carolineferraz</strong></a>
+                                class="portfolio-github-anchor contact-link"><strong>
+                                    github.com/carolineferraz</strong></a>
                         </li>
                     </ul>
 
@@ -240,7 +242,7 @@
         </div>
         <!-- /projects -->
 
-        <!-- graduation -->
+        <!-- skills -->
         <div class="row">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225">
                 <path fill="#44475A" fill-opacity="1"
@@ -248,64 +250,11 @@
                 </path>
             </svg>
             <div class="col-md-12 curved">
-                <h3 id="graduation">graduation<span class="span-white">() {</span></h3>
-                <div class="div-formacao">
-                    <ul>
-                        <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
-                        <li>
-                            <div class="div-formacao-titulo-datas">
-                                <p class="p-formacao-titulo"> Full Stack/Java Development</p>
-                                <p class="p-formacao-datas">(Recife-PE, Brazil | March 2022 - June 2022)</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <p class="p-formacao">/* Bootcamp intensivo de TI promovido pela <span><a
-                                href="https://brazil.generation.org/" target="_blank" class="gen-anchor">Generation
-                                Brasil</a></span> para formação em
-                        Desenvolvimento Web Full Stack, onde aprimorei soft skills (Business Service Management) e
-                        hard
-                        skills em tecnologias/ linguagens
-                        como Java, Spring Boot, MySQL, Angular, HTML, CSS, Git/GitHub
-                        e metodologia ágil Scrum. */</p>
-                    <ul>
-                        <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
-                        <li>
-                            <div class="div-formacao-titulo-datas">
-                                <p class="p-formacao-titulo"> Systems Analysis and Development</p>
-                                <p class="p-formacao-datas">(Recife-PE, Brazil | Feb. 2022 - June 2024) </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <p class="p-formacao">/* Tecnólogo pela Faculdade Estácio. */</p>
-                    <ul>
-                        <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
-                        <li>
-                            <div class="div-formacao-titulo-datas">
-                                <p class="p-formacao-titulo"> Architecture and Urbanism</p>
-                                <p class="p-formacao-datas">(Recife-PE, Brazil | Aug. 2014 - Dec. 2019) </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <p class="p-formacao">/* Curso superior pela Faculdade Ciências Humanas Esuda. */</p>
-                </div>
-                <h3><span class="span-white">}</span></h3>
 
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#44475A" fill-opacity="1"
-                    d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-                </path>
-            </svg>
-        </div>
-        <!-- /graduation -->
-
-        <!-- skills -->
-        <div class="row">
-            <div class="col-md-12 container-skills">
                 <h3 id="skills">skills<span class="span-white">() {</span></h3>
                 <div class="col-md-10 justify-content-center col-skills">
 
-                    <div class="row mt-3 d-flex justify-content-center">
+                    <div class="row mt-3 d-flex justify-content-center init-hidden">
 
                         <p class="text-skill-none">/* Passe o cursor por cima dos ícones para ver a descrição! */
                         </p>
@@ -331,11 +280,8 @@
                         </div>
                         <div class="div-text-skill div-text-skill-ts">
                             <p class="title-skill title-ts">TypeScript</p>
-                            <p class="text-skill text-ts">Versão mais fortemente tipada do JavaScript, que
-                                proporciona a
-                                implementação do paradigma da Programação Orientada a Objetos a essa linguagem
-                                dentro do
-                                desenvolvimento front-end. Utilizo o TypeScript dentro do framework Angular.</p>
+                            <p class="text-skill text-ts">Versão mais fortemente tipada do JavaScript. Utilizo o
+                                TypeScript dentro do framework Angular.</p>
                         </div>
                         <div class="div-text-skill div-text-skill-angular">
                             <p class="title-skill title-angular">Angular</p>
@@ -358,12 +304,9 @@
                         </div>
                         <div class="div-text-skill div-text-skill-mysql">
                             <p class="title-skill title-mysql">MySQL</p>
-                            <p class="text-skill text-mysql">Sistema de gerenciamento de banco de dados relacional
-                                em
-                                linguagem SQL. Utilizo o MySQL Workbench durante o desenvolvimento do back-end da
-                                API,
-                                onde aplico a pesistência de dados com o JPA Hibernate e realizo testes do CRUD da
-                                aplicação juntamente com o Postman.</p>
+                            <p class="text-skill text-mysql">Sistema de gerenciamento de banco de dados relacional que
+                                utilizo se comunicando com o back-end da
+                                API através da persistência de dados.</p>
                         </div>
                         <div class="div-text-skill div-text-skill-git">
                             <p class="title-skill title-git">Git/ GitHub/ Git Workflow</p>
@@ -384,7 +327,7 @@
 
                     </div>
 
-                    <div class="div-skills mt-3 m-0 justify-content-center mr-0">
+                    <div class="div-skills mt-3 m-0 justify-content-center mr-0 init-hidden">
                         <div class="div-skill-html" onmouseover="mostrarDivHtml()" onmouseout="esconderDivHtml()">
 
                         </div>
@@ -422,118 +365,169 @@
                 <h3><span class="span-white">}</span></h3>
             </div>
         </div>
-        <!-- /skills -->
-
-        <!-- contact -->
-        <div class="row">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225">
-                <path fill="#44475A" fill-opacity="1"
-                    d="M0,128L80,133.3C160,139,320,149,480,133.3C640,117,800,75,960,85.3C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-                </path>
-            </svg>
-            <div class="col-md-12 curved">
-                <h3 id="contact">contact<span class="span-white">() {</span></h3>
-                <div class="div-contacts">
-                    <div class="div-contacts-col">
-                        <ul class="mt-0 pt-0">
-                            <li>
-                                <i class="fa-brands fa-linkedin green-icon"></i>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/ferraz-caroline/" target="_blank"
-                                    class="contact-anchor"><strong class="ml-3">
-                                        linkedin/in/ferraz-caroline</strong></a>
-                            </li>
-                        </ul>
-                        <ul class="mt-0 pt-1">
-                            <li>
-                                <i class="fa-brands fa-github green-icon"></i>
-                            </li>
-                            <li>
-                                <a href="https://github.com/carolineferraz/" target="_blank"
-                                    class="contact-anchor"><strong class="ml-3">
-                                        github.com/carolineferraz</strong></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="div-contacts-col">
-                        <ul class="mt-0 pt-1">
-                            <li>
-                                <i class="fa-solid fa-at green-icon"></i>
-                            </li>
-                            <li>
-                                <strong class="ml-3 contact-anchor"> projetos.crrz@gmail.com</strong>
-                            </li>
-                        </ul>
-                        <ul class="mt-0 pt-1">
-                            <li>
-                                <i class="fa-solid fa-mobile-screen-button green-icon"></i>
-                            </li>
-                            <li>
-                                <strong class="ml-3 contact-anchor"> 55+ 81 9 9180 4497</strong>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="div-contacts-row">
-                        <ul class="mt-0 pt-1">
-                            <li>
-                                <i class="fa-solid fa-location-dot green-icon"></i>
-                            </li>
-                            <li>
-                                <strong class="ml-3 contact-anchor"> Recife - PE</strong>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="div-text-contact">
-                    <p class="p-formacao p-contact">/* connect with me on social media and contact me! :) */</p>
-                </div>
-                <h3><span class="span-white">}</span></h3>
-
-
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#44475A" fill-opacity="1"
-                    d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
-                </path>
-            </svg>
-        </div>
-        <!-- /contact -->
-
-        <div class="row row-animacao m-0">
-            <img src="./assets/img/ghost.svg" class="fantasminha">
-        </div>
-
-        <!-- footer -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#44475A" fill-opacity="1"
-                d="M0,192L40,181.3C80,171,160,149,240,170.7C320,192,400,256,480,245.3C560,235,640,149,720,149.3C800,149,880,235,960,272C1040,309,1120,299,1200,288C1280,277,1360,267,1400,261.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+                d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
             </path>
         </svg>
+    </div>
+    <!-- /skills -->
 
+    <!-- contact -->
 
-        <div class="row m-0  bg-color d-flex justify-content-center align-items-center">
-            <div class="col-md-12 align-items-center m-0 justify-content-center ">
-                <ul class="mt-0 mb-5 pt-1 align-self-center text-center">
+    <div class="col-md-12 container-portfolio m-0">
+        <h3 id="contact">contact<span class="span-white">() {</span></h3>
+        <div class="div-contacts">
+            <div class="div-contacts-col">
+                <ul class="mt-0 pt-0 init-hidden">
                     <li>
-                        <i class="fa-solid fa-link white-icon"> </i>
+                        <i class="fa-brands fa-linkedin green-icon"></i>
                     </li>
                     <li>
-                        <a href="https://drive.google.com/file/d/12I05DC8FxmI0psUbE9yIQ2OFwa5iUInW/view?usp=sharing"
-                            target="_blank"> <strong class="cv-anchor ml-2">CV in PDF</strong></a>
+                        <a href="https://www.linkedin.com/in/ferraz-caroline/" target="_blank"
+                            class="contact-anchor"><strong class="ml-3">
+                                linkedin/in/ferraz-caroline</strong></a>
                     </li>
                 </ul>
-                <br>
-                <h4 class="text-center p-0 m-0"><i class="fa-solid fa-copyright"></i> Caroline Ferraz</h4>
-                <br>
-                <h4 class="text-center p-0 mb-5"><i class="fa-solid fa-copyright"></i> Color Scheme: <span><a
-                            href="https://draculatheme.com/" target="_blank">Dracula Theme</a></span></h4>
-
+                <ul class="mt-0 pt-1 init-hidden">
+                    <li>
+                        <i class="fa-brands fa-github green-icon"></i>
+                    </li>
+                    <li>
+                        <a href="https://github.com/carolineferraz/" target="_blank" class="contact-anchor"><strong
+                                class="ml-3">
+                                github.com/carolineferraz</strong></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="div-contacts-col">
+                <ul class="mt-0 pt-1 init-hidden">
+                    <li>
+                        <i class="fa-solid fa-at green-icon"></i>
+                    </li>
+                    <li>
+                        <strong class="ml-3 contact-anchor"> projetos.crrz@gmail.com</strong>
+                    </li>
+                </ul>
+                <ul class="mt-0 pt-1 init-hidden">
+                    <li>
+                        <i class="fa-solid fa-mobile-screen-button green-icon"></i>
+                    </li>
+                    <li>
+                        <strong class="ml-3 contact-anchor"> 55+ 81 9 9180 4497</strong>
+                    </li>
+                </ul>
+            </div>
+            <div class="div-contacts-row init-hidden">
+                <ul class="mt-0 pt-1">
+                    <li>
+                        <i class="fa-solid fa-location-dot green-icon"></i>
+                    </li>
+                    <li>
+                        <strong class="ml-3 contact-anchor"> Recife - PE</strong>
+                    </li>
+                </ul>
             </div>
         </div>
+        <div class="div-text-contact">
+            <p class="p-formacao p-contact">/* connect with me on social media and contact me! :) */</p>
+        </div>
+        <h3><span class="span-white">}</span></h3>
+    </div>
+
+    <!-- /contact -->
+
+    <!-- contact -->
+
+    <!-- footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#44475A" fill-opacity="1"
+            d="M0,192L40,181.3C80,171,160,149,240,170.7C320,192,400,256,480,245.3C560,235,640,149,720,149.3C800,149,880,235,960,272C1040,309,1120,299,1200,288C1280,277,1360,267,1400,261.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+
+
+    <div class="row m-0  bg-color d-flex justify-content-center align-items-center">
+        <div class="col-md-12 align-items-center m-0 justify-content-center ">
+            <ul class="mt-0 mb-5 pt-1 align-self-center text-center">
+                <li>
+                    <i class="fa-solid fa-link white-icon"> </i>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/12I05DC8FxmI0psUbE9yIQ2OFwa5iUInW/view?usp=sharing"
+                        target="_blank"> <strong class="cv-anchor ml-2">CV in PDF</strong></a>
+                </li>
+            </ul>
+            <br>
+            <h4 class="text-center p-0 m-0"><i class="fa-solid fa-copyright"></i> Caroline Ferraz</h4>
+            <br>
+            <h4 class="text-center p-0 mb-5"><i class="fa-solid fa-copyright"></i> Color Scheme: <span><a
+                        href="https://draculatheme.com/" target="_blank">Dracula Theme</a></span></h4>
+
+        </div>
+    </div>
     </div>
 
     <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
+
+<!-- graduation -->
+<!-- <div class="row">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 225">
+        <path fill="#44475A" fill-opacity="1"
+            d="M0,128L80,133.3C160,139,320,149,480,133.3C640,117,800,75,960,85.3C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+        </path>
+    </svg>
+    <div class="col-md-12 curved">
+        <h3 id="graduation">graduation<span class="span-white">() {</span></h3>
+        <div class="div-formacao">
+            <ul>
+                <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
+                <li>
+                    <div class="div-formacao-titulo-datas">
+                        <p class="p-formacao-titulo"> Full Stack/Java Development</p>
+                        <p class="p-formacao-datas">(Recife-PE, Brazil | March 2022 - June 2022)</p>
+                    </div>
+                </li>
+            </ul>
+            <p class="p-formacao">/* Bootcamp intensivo de TI promovido pela <span><a
+                        href="https://brazil.generation.org/" target="_blank" class="gen-anchor">Generation
+                        Brasil</a></span> para formação em
+                Desenvolvimento Web Full Stack, onde aprimorei soft skills (Business Service Management) e
+                hard
+                skills em tecnologias/ linguagens
+                como Java, Spring Boot, MySQL, Angular, HTML, CSS, Git/GitHub
+                e metodologia ágil Scrum. */</p>
+            <ul>
+                <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
+                <li>
+                    <div class="div-formacao-titulo-datas">
+                        <p class="p-formacao-titulo"> Systems Analysis and Development</p>
+                        <p class="p-formacao-datas">(Recife-PE, Brazil | Feb. 2022 - June 2024) </p>
+                    </div>
+                </li>
+            </ul>
+            <p class="p-formacao">/* Tecnólogo pela Faculdade Estácio. */</p>
+            <ul>
+                <li><i class="fa-solid fa-graduation-cap green-icon"></i></li>
+                <li>
+                    <div class="div-formacao-titulo-datas">
+                        <p class="p-formacao-titulo"> Architecture and Urbanism</p>
+                        <p class="p-formacao-datas">(Recife-PE, Brazil | Aug. 2014 - Dec. 2019) </p>
+                    </div>
+                </li>
+            </ul>
+            <p class="p-formacao">/* Curso superior pela Faculdade Ciências Humanas Esuda. */</p>
+        </div>
+        <h3><span class="span-white">}</span></h3>
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#44475A" fill-opacity="1"
+            d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+        </path>
+    </svg>
+</div> -->
+<!-- /graduation -->

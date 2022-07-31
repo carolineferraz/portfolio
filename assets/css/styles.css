@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syncopate&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate&display=swap');
 
@@ -26,7 +27,17 @@ body {
     --white-color: #F8F8F2;
 }
 
-/* navBar: */
+.init-hidden {
+    opacity: 0;
+    transition: opacity 1.8s linear;
+}
+
+.init-hidden-off {
+    opacity: 1;
+}
+
+/* NAVBAR:
+********************************** */
 
 .navbar {
     width: 100%;
@@ -552,7 +563,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;   
 }
 
 #bg-p1 {
@@ -821,7 +832,7 @@ h4 span a {
     }
 
     .p-formacao {
-        font-size: .9rem;
+        font-size: 1rem;
     }
 
     .cartoon-carol {
@@ -926,24 +937,12 @@ h4 span a {
         font-size: 1rem;
     }
 
-    .div-formacao-titulo-datas {
-        padding: 0;
-        margin: 0;
-    }
-
-    .p-formacao-titulo {
-        font-weight: 600;
-        font-size: 1.05rem;
-    }
-
-    .p-formacao-datas {
-        font-weight: 500;
-        text-align: left;
-        font-size: .9rem;
-    }
-
     .portfolio-github-anchor {
         font-size: 1rem;
+    }
+
+    .col-skills {
+        padding-left: 0;
     }
 
     .contact-anchor {
